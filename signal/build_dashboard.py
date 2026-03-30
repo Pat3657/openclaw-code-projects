@@ -109,18 +109,71 @@ def build():
     lag_etf  = sector_list[-1] if sector_list else {}
 
     # ── Pipeline ─────────────────────────────────────────────────
-    top_ta   = list(pipeline.get('top_indications', {}).items())[:10]
-    top_mod  = list(pipeline.get('modality_counts', {}).items())[:8]
-    top_tgt  = list(pipeline.get('top_targets', {}).items())[:15]
+    # Support new format (ta_counts/modality_counts) and old (top_indications)
+    top_ta   = list((pipeline.get('ta_counts') or pipeline.get('top_indications', {})).items())[:10]
+    top_mod  = list((pipeline.get('modality_counts') or {}).items())[:8]
+    top_tgt  = list((pipeline.get('target_counts') or pipeline.get('top_targets', {})).items())[:15]
     phase_c  = pipeline.get('phase_counts', {})
-    top_p3   = pipeline.get('top_phase3_assets', [])[:25]
+    top_p3   = pipeline.get('top_phase3_assets', [])[:50]
+    # All trials — prioritize P3 with good classification, then P2
+    _all_raw = pipeline.get('all_trials', top_p3)
+    _p3_good = [t for t in _all_raw if t.get('phase') == 'PHASE3' and t.get('drug_name','').strip() and t.get('indication','Other') != 'Other']
+    _p2_good = [t for t in _all_raw if t.get('phase') == 'PHASE2' and t.get('drug_name','').strip() and t.get('indication','Other') != 'Other']
+    _p3_rest = [t for t in _all_raw if t.get('phase') == 'PHASE3' and t not in _p3_good]
+    all_tri  = (_p3_good + _p2_good + _p3_rest)[:300]
     heatmap  = pipeline.get('heatmap', {})
+    pipe_src = pipeline.get('_source', {})
+
+    # ── Clinical trials ───────────────────────────────────────────
+    # Support both new pipeline-sourced trials and old clinical_trials.json
+    raw_trials = []
+    if all_tri:
+        # Use pipeline trials (richer data)
+        raw_trials = all_tri
+    elif trials.get('studies'):
+        raw_trials = trials.get('studies', [])
+    # Add therapeutic_area to old-format trials if missing
+    for t in raw_trials:
+        if not t.get('therapeutic_area') and not t.get('indication'):
+            conds = t.get('conditions', [])
+            ta_map = {'cancer':'Oncology','tumor':'Oncology','arthritis':'Immunology',
+                      'diabetes':'Metabolic','alzheimer':'Neurology','rare':'Rare Disease',
+                      'hiv':'Infectious','asthma':'Respiratory','fibrosis':'Rare Disease'}
+            text = ' '.join(conds).lower()
+            t['therapeutic_area'] = next((v for k,v in ta_map.items() if k in text), 'Other')
+        if not t.get('drug_name') and t.get('drug_names'):
+            t['drug_name'] = t['drug_names'][0] if t['drug_names'] else ''
+
+    # Slim trials for bundle (remove huge fields)
+    slim_trials = []
+    slim_fields = {'nct_id','ticker','sponsor','phase','status','drug_name','target',
+                   'indication','therapeutic_area','modality','primary_endpoint',
+                   'enrollment','start_date','completion_date','source_url','brief_summary'}
+    for t in raw_trials[:200]:
+        row = {k: v for k, v in t.items() if k in slim_fields}
+        if row.get('brief_summary'):    row['brief_summary']    = row['brief_summary'][:150]
+        if row.get('primary_endpoint'): row['primary_endpoint'] = row['primary_endpoint'][:100]
+        slim_trials.append(row)
+
+    trials_by_status = {}
+    for t in raw_trials:
+        st = t.get('status') or t.get('overall_status', '')
+        trials_by_status[st] = trials_by_status.get(st, 0) + 1
+    trials_src = pipeline.get('_source') or trials.get('_source', {})
+
+    # ── PubMed ────────────────────────────────────────────────────
+    pub_papers  = pubmed.get("papers", [])[:80]
+    drug_counts = pubmed.get('drug_counts') or pubmed.get('target_counts', {})
+    pub_co_counts = pubmed.get('company_counts', {})
+    pub_ta_counts = pubmed.get('ta_counts', {})
+    pub_src = pubmed.get('_source', {})
 
     # ── All JSON data bundle for the dashboard ───────────────────
     data_bundle = {
         # Biopharma
         'pdufa':      [c for c in pdufa.get('catalysts', []) if (c.get('days_away') or -999) >= -7][:28],
         'p3assets':   top_p3,
+        'allTrials':  slim_trials,
         'phaseLabels': list(phase_c.keys()),
         'phaseData':   list(phase_c.values()),
         'taLabels':   [k for k,v in top_ta],
@@ -130,17 +183,23 @@ def build():
         'tgtLabels':  [k for k,v in top_tgt],
         'tgtData':    [v for k,v in top_tgt],
         'heatmap':    heatmap,
-        'hmMods':     pipeline.get('heatmap_modalities', []),
-        'hmInds':     pipeline.get('heatmap_indications', []),
-        'trials':     trials.get('studies', [])[:60],
-        'trialsByStatus': trials.get('by_status', {}),
-        'trialsCount': trials.get('count', 0),
-        'papers':     pubmed.get('papers', [])[:50],
-        'tgtCounts':  pubmed.get('target_counts', {}),
-        'pubmedCount': pubmed.get('count', 0),
+        'hmMods':     pipeline.get('heatmap_mods') or pipeline.get('heatmap_modalities', []),
+        'hmInds':     pipeline.get('heatmap_inds') or pipeline.get('heatmap_indications', []),
+        'trials':     slim_trials,
+
+        'trialsByStatus': trials_by_status,
+        'trialsCount': len(raw_trials),
+        'trialsSource': trials_src,
+        'papers':     pub_papers,
+        'tgtCounts':  drug_counts,
+        'drugCounts': drug_counts,
+        'pubmedCoCounts': pub_co_counts,
+        'pubmedTaCounts': pub_ta_counts,
+        'pubmedCount': pubmed.get('total_papers') or pubmed.get('count', len(pub_papers)),
+        'pubmedSource': pub_src,
+        'pipelineSource': pipe_src,
         'filings':    sec.get('filings', [])[:60],
-        'secCount':   sec.get('count', 0),
-        # Pipeline KPIs
+        'secCount':   sec.get('count', 0),        # Pipeline KPIs
         'kpi': {
             'total_programs':   pipeline.get('total_programs', 0),
             'phase3_count':     pipeline.get('phase3_count', 0),
