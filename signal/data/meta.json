@@ -1,0 +1,47 @@
+{
+  "pipeline_summary": {
+    "label": "Pipeline Summary",
+    "last_updated": "2026-03-29T19:08:40.641101Z",
+    "status": "ok",
+    "elapsed_s": 0.5
+  },
+  "fda_pdufa": {
+    "label": "FDA PDUFA Calendar",
+    "last_updated": "2026-03-29T19:08:41.004031Z",
+    "status": "ok",
+    "elapsed_s": 0.4
+  },
+  "clinical_trials": {
+    "label": "Clinical Trials",
+    "last_updated": "2026-03-29T19:08:43.285342Z",
+    "status": "ok",
+    "elapsed_s": 2.3
+  },
+  "pubmed": {
+    "label": "PubMed Signals",
+    "last_updated": "2026-03-29T19:08:50.418824Z",
+    "status": "ok",
+    "elapsed_s": 7.1
+  },
+  "sec_edgar": {
+    "label": "SEC Filings",
+    "last_updated": "2026-03-29T19:09:00.340893Z",
+    "status": "ok",
+    "elapsed_s": 9.9
+  },
+  "bls_macro": {
+    "label": "BLS Macro",
+    "last_updated": "2026-03-29T19:09:00.700185Z",
+    "status": "ok",
+    "elapsed_s": 0.4
+  },
+  "sector_signals": {
+    "label": "Sector Signals",
+    "last_updated": "2026-03-29T19:09:05.429460Z",
+    "status": "ok",
+    "elapsed_s": 4.7
+  },
+  "_refresh_time": "2026-03-29T19:09:05.429479Z",
+  "_total_elapsed": 25.2,
+  "_errors": 0
+}
