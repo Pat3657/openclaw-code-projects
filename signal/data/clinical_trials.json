@@ -1,0 +1,511 @@
+{
+  "count": 34,
+  "by_status": {
+    "UNKNOWN": 3,
+    "COMPLETED": 23,
+    "NOT_YET_RECRUITING": 1,
+    "RECRUITING": 3,
+    "TERMINATED": 3,
+    "WITHDRAWN": 1
+  },
+  "studies": [
+    {
+      "nct_id": "NCT00003016",
+      "title": "Prolonged Tamoxifen Compared With Shorter Tamoxifen in Treating Patients Who Have Breast Cancer",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "sponsor": "University of Oxford",
+      "phase": "PHASE3",
+      "status": "UNKNOWN",
+      "start_date": "1995-10",
+      "primary_completion": "",
+      "enrollment": 20000,
+      "brief_summary": "RATIONALE: Estrogen can stimulate the growth of breast cancer cells. Hormone therapy using tamoxifen may fight breast cancer by reducing the production of estrogen. It is not yet known if prolonged ta"
+    },
+    {
+      "nct_id": "NCT02666664",
+      "title": "Evaluation of Long-Term Safety and Tolerability of ETC-1002 in High-Risk Patients With Hyperlipidemia and High CV Risk (",
+      "conditions": [
+        "Hypercholesterolemia",
+        "Atherosclerotic Cardiovascular Diseases"
+      ],
+      "sponsor": "Esperion Therapeutics, Inc.",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2016-01-21",
+      "primary_completion": "2018-02-21",
+      "enrollment": 2230,
+      "brief_summary": "The purpose of this study is to see if ETC-1002 (bempedoic acid) is safe and well-tolerated versus placebo in patients with high cardiovascular risk and elevated LDL cholesterol that is not adequately"
+    },
+    {
+      "nct_id": "NCT01228331",
+      "title": "Clofarabine or High-Dose Cytarabine and Pegaspargase in Children with ALL",
+      "conditions": [
+        "Leukemia"
+      ],
+      "sponsor": "Universit\u00e4tsklinikum Hamburg-Eppendorf",
+      "phase": "PHASE2,PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2010-10",
+      "primary_completion": "2019-12",
+      "enrollment": 745,
+      "brief_summary": "RATIONALE: Drugs used in chemotherapy work in different ways to stop the growth of cancer cells, either by killing the cells or by stopping them from dividing. Giving more than once drug (combination "
+    },
+    {
+      "nct_id": "NCT00361335",
+      "title": "A Study of Safety and Effectiveness of Golimumab in Participants With Active Rheumatoid Arthritis Despite Methotrexate T",
+      "conditions": [
+        "Rheumatoid Arthritis"
+      ],
+      "sponsor": "Centocor, Inc.",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2006-09",
+      "primary_completion": "2007-12",
+      "enrollment": 643,
+      "brief_summary": "The purpose of this study is to assess the clinical effectiveness and safety of golimumab intravenous (IV) infusions every 12 weeks with or without Methotrexate (MTX), compared with MTX alone, in pati"
+    },
+    {
+      "nct_id": "NCT04277884",
+      "title": "Firibastat in Treatment-resistant Hypertension",
+      "conditions": [
+        "Hypertension"
+      ],
+      "sponsor": "Quantum Genomics SA",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2020-06-25",
+      "primary_completion": "2022-08-30",
+      "enrollment": 515,
+      "brief_summary": "This is a double-blind, placebo-controlled, multicenter, efficacy and safety study of firibastat (QGC001) administered po bid over 12 weeks in male and female subjects \u226518 years of age at Screening, w"
+    },
+    {
+      "nct_id": "NCT04737187",
+      "title": "Phase III Study of Trifluridine/Tipiracil With and Without Bevacizumab in Refractory Metastatic Colorectal Cancer Patien",
+      "conditions": [
+        "Refractory Metastatic Colorectal Cancer"
+      ],
+      "sponsor": "Taiho Oncology, Inc.",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2020-11-25",
+      "primary_completion": "2022-07-19",
+      "enrollment": 492,
+      "brief_summary": "This study is designed as an international, open-label, controlled two-arm, randomized phase III comparison study evaluating the efficacy and safety of trifluridine/tipiracil in combination with bevac"
+    },
+    {
+      "nct_id": "NCT03768414",
+      "title": "Gemcitabine Hydrochloride and Cisplatin With or Without Nab-Paclitaxel in Treating Patients With Newly Diagnosed Advance",
+      "conditions": [
+        "Stage III Distal Bile Duct Cancer AJCC v8",
+        "Stage III Gallbladder Cancer AJCC v8",
+        "Stage III Intrahepatic Cholangiocarcinoma AJCC v8"
+      ],
+      "sponsor": "SWOG Cancer Research Network",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2019-02-07",
+      "primary_completion": "2023-10-04",
+      "enrollment": 452,
+      "brief_summary": "This phase III trial studies how well gemcitabine hydrochloride and cisplatin given with or without nab-paclitaxel work in treating patients with newly diagnosed biliary tract cancers that have spread"
+    },
+    {
+      "nct_id": "NCT06501664",
+      "title": "Liposomal Irinotecan and 5-FU as Second-line Therapy for Patients With ESCC",
+      "conditions": [
+        "Esophageal Cancer"
+      ],
+      "sponsor": "Rui-hua Xu, MD, PhD",
+      "phase": "PHASE3",
+      "status": "NOT_YET_RECRUITING",
+      "start_date": "2024-08-01",
+      "primary_completion": "2026-11-30",
+      "enrollment": 360,
+      "brief_summary": "The aim of this study is to compare the efficacy and safety of liposome irinotecan +5-FU and irinotecan / irinotecan +5-FU regimens in the second-line treatment of esophageal squamous cell carcinoma ("
+    },
+    {
+      "nct_id": "NCT00035308",
+      "title": "Safety and Efficacy Study of LJP 394 (Abetimus Sodium) to Treat Lupus Kidney Disease",
+      "conditions": [
+        "Immunologic Diseases",
+        "Autoimmune Diseases",
+        "Systemic Lupus Erythematosus"
+      ],
+      "sponsor": "La Jolla Pharmaceutical Company",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "",
+      "primary_completion": "",
+      "enrollment": 330,
+      "brief_summary": "The purpose of this study is to determine whether LJP 394 (abetimus sodium) is safe and effective in delaying and reducing renal flares in patients with lupus nephritis."
+    },
+    {
+      "nct_id": "NCT00004662",
+      "title": "Phase III Randomized, Double-Blind, Placebo-Controlled Study of Dehydroepiandrosterone in Women With Active Systemic Lup",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "sponsor": "National Center for Research Resources (NCRR)",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "1996-03",
+      "primary_completion": "",
+      "enrollment": 300,
+      "brief_summary": "OBJECTIVES:\n\nI. Evaluate the safety and efficacy of synthetic dehydroepiandrosterone, GL701, in women with active systemic lupus erythematosus."
+    },
+    {
+      "nct_id": "NCT00856271",
+      "title": "Olmesartan Medoxomil Versus Losartan Potassium in Patients With Mild to Moderate Essential Hypertension",
+      "conditions": [
+        "Essential Hypertension"
+      ],
+      "sponsor": "Daiichi Sankyo",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2004-08",
+      "primary_completion": "2005-02",
+      "enrollment": 287,
+      "brief_summary": "The purpose of this study is to evaluate the efficacy and safety of olmesartan medoxomil compared with losartan potassium in patients with mild to moderate essential hypertension."
+    },
+    {
+      "nct_id": "NCT01724346",
+      "title": "Open-label Extension Study in Patients 65 Years or Older With Chronic Lymphocytic Leukemia or Small Lymphocytic Lymphoma",
+      "conditions": [
+        "Chronic Lymphocytic Leukemia",
+        "Small Lymphocytic Lymphoma"
+      ],
+      "sponsor": "Pharmacyclics LLC.",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2013-12-03",
+      "primary_completion": "2023-08-18",
+      "enrollment": 269,
+      "brief_summary": "An Open-label Extension Study in Patients 65 Years or Older with Chronic Lymphocytic Leukemia (CLL) or Small Lymphocytic Lymphoma (SLL) Who Participated in Study PCYC-1115-CA (Ibrutinib versus Chloram"
+    },
+    {
+      "nct_id": "NCT04951648",
+      "title": "A Phase III Study to Assess the Efficacy and Safety of Almonertinib Versus Platinum-based Chemotherapy as First-line The",
+      "conditions": [
+        "Non-small Cell Lung Cancer"
+      ],
+      "sponsor": "Jiangsu Hansoh Pharmaceutical Co., Ltd.",
+      "phase": "PHASE3",
+      "status": "UNKNOWN",
+      "start_date": "2021-07-15",
+      "primary_completion": "2023-10-04",
+      "enrollment": 220,
+      "brief_summary": "To assess the efficacy and safety of Almonertinib versus platinum-based chemotherapy as first-line therapy in patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) harboring "
+    },
+    {
+      "nct_id": "NCT00004795",
+      "title": "Phase II/III Randomized, Double-Blind, Placebo-Controlled Study of Dehydroepiandrosterone in Women With Mild to Moderate",
+      "conditions": [
+        "Systemic Lupus Erythematosus"
+      ],
+      "sponsor": "National Center for Research Resources (NCRR)",
+      "phase": "PHASE2,PHASE3",
+      "status": "COMPLETED",
+      "start_date": "1994-08",
+      "primary_completion": "",
+      "enrollment": 190,
+      "brief_summary": "OBJECTIVES: I. Evaluate the safety and efficacy of synthetic dehydroepiandrosterone (GL701) in women with prednisone-dependent systemic lupus erythematosus.\n\nII. Describe the pharmacokinetics of GL701"
+    },
+    {
+      "nct_id": "NCT00971399",
+      "title": "Ramosetron Versus Ondansetron for Radiotherapy Induced Nausea and Vomiting",
+      "conditions": [
+        "Radiotherapy Induced Nausea and Vomiting"
+      ],
+      "sponsor": "Seoul National University Hospital",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2009-09",
+      "primary_completion": "2011-02",
+      "enrollment": 172,
+      "brief_summary": "The purpose of this study is:\n\n1. To compare prophylactic effect of ondansetron versus ramosetron on radiotherapy induced nausea and vomiting in the treatment of gastrointestinal cancer.\n2. To verify "
+    },
+    {
+      "nct_id": "NCT01668914",
+      "title": "Internal Mammary Sentinel Lymph Node Biopsy in Early Breast Cancer Patients With Clinically Axillary Node -Positive",
+      "conditions": [
+        "Breast Cancer"
+      ],
+      "sponsor": "Shandong Cancer Hospital and Institute",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2014-02",
+      "primary_completion": "2017-09",
+      "enrollment": 126,
+      "brief_summary": "In addition to the axillary lymph nodes, the internal mammary lymph nodes (IMLNs) drainage is another important lymphatic channel of the breast. The status of IMLNs also provides important prognostic "
+    },
+    {
+      "nct_id": "NCT00004286",
+      "title": "Phase III Multicenter Double Blind Controlled Trial of Human Immune Globulin Therapy in Previously Untreated Patients Wi",
+      "conditions": [
+        "Polyradiculoneuropathy, Chronic Inflammatory Demyelinating"
+      ],
+      "sponsor": "National Center for Research Resources (NCRR)",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "1996-02",
+      "primary_completion": "",
+      "enrollment": 120,
+      "brief_summary": "OBJECTIVES:\n\nI. Compare and evaluate the response to treatment with intravenous human immune globulin (IVIG) or placebo in previously untreated patients with chronic inflammatory demyelinating polyneu"
+    },
+    {
+      "nct_id": "NCT06120049",
+      "title": "[18F]-MFBG Versus [123I]-MIBG and [18F]-PE2I in PD vs. MSA and DLB vs. AD",
+      "conditions": [
+        "Parkinson Disease",
+        "Dementia With Lewy Bodies",
+        "MSA - Multiple System Atrophy"
+      ],
+      "sponsor": "prof. dr. Koen Van Laere",
+      "phase": "PHASE2,PHASE3",
+      "status": "RECRUITING",
+      "start_date": "2024-01-19",
+      "primary_completion": "2026-07",
+      "enrollment": 113,
+      "brief_summary": "Study goal:\n\nThe goal of this prospective head to head comparison is to evaluate the effectiveness of \\[18F\\]-MFBG PET in assessing cardiac innervation, comparing it with \\[123I\\]-MIBG SPECT The study"
+    },
+    {
+      "nct_id": "NCT00004941",
+      "title": "Phase III Randomized Study of Anti-Tumor Necrosis Factor Chimeric Monoclonal Antibody (cA2) for Patients With Enterocuta",
+      "conditions": [
+        "Crohn's Disease"
+      ],
+      "sponsor": "FDA Office of Orphan Products Development",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "1996-07",
+      "primary_completion": "",
+      "enrollment": 94,
+      "brief_summary": "OBJECTIVES:\n\nI. Evaluate the efficacy of chimeric monoclonal antibody (cA2) compared with placebo in closure of enterocutaneous fistulae in patients with Crohn's disease."
+    },
+    {
+      "nct_id": "NCT03564704",
+      "title": "Precision Diagnosis Directing HDACi Chidamide Target Therapy for Adult T-LBL/ALL",
+      "conditions": [
+        "Leukemia",
+        "Leukemia, Acute",
+        "Adult Lymphoblastic Lymphoma"
+      ],
+      "sponsor": "Nanfang Hospital, Southern Medical University",
+      "phase": "PHASE2,PHASE3",
+      "status": "UNKNOWN",
+      "start_date": "2016-02-14",
+      "primary_completion": "2021-05-30",
+      "enrollment": 80,
+      "brief_summary": "Based on the pediatric-inspired, PEG-L-asparaginase-intensified and MRD-directed PDT-ALL-2016 protocol, this open-label, one-arm, multi-site trial PDT-ALL-LBL is aimed to evaluate the safety and effec"
+    },
+    {
+      "nct_id": "NCT04221451",
+      "title": "A Multinational, Randomized, Double-blind, Placebo-controlled Study to Assess the Efficacy, Pharmacodynamics, Pharmacoki",
+      "conditions": [
+        "Tay-Sachs Disease",
+        "Sandhoff Disease"
+      ],
+      "sponsor": "Genzyme, a Sanofi Company",
+      "phase": "PHASE3",
+      "status": "TERMINATED",
+      "start_date": "2020-06-29",
+      "primary_completion": "2024-12-26",
+      "enrollment": 75,
+      "brief_summary": "Primary Objectives:\n\nPrimary population (adult participants with late-onset GM2 gangliosidosis): To assess the efficacy and pharmacodynamics (PD) of daily oral dosing of venglustat when administered o"
+    },
+    {
+      "nct_id": "NCT00157079",
+      "title": "Safety and Efficacy Study of a 10% Intravenous Immune Globulin Solution in Subjects With Primary Immunodeficiency Disord",
+      "conditions": [
+        "Primary Immunodeficiency Diseases (PID)",
+        "Immune Thrombocytopenic Purpura (ITP)",
+        "Kawasaki Syndrome"
+      ],
+      "sponsor": "Baxalta now part of Shire",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2002-06-25",
+      "primary_completion": "2003-12-16",
+      "enrollment": 61,
+      "brief_summary": "The purpose of this study is to assess the safety and efficacy of Immune Globulin Intravenous (Human), 10% (IGIV 10%) in subjects with primary immunodeficiency disorders."
+    },
+    {
+      "nct_id": "NCT02293460",
+      "title": "Efficacy and Safety Study of I10E in Treatment of Patients With CIDP",
+      "conditions": [
+        "Chronic Inflammatory Demyelinating Polyradiculoneuropathy"
+      ],
+      "sponsor": "Laboratoire fran\u00e7ais de Fractionnement et de Biotechnologies",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2015-05",
+      "primary_completion": "2017-09-29",
+      "enrollment": 44,
+      "brief_summary": "Primary objective:\n\nTo assess the efficacy of I10E in improving the disability of patients with CIDP.\n\nSecondary objective:\n\nTo assess the safety of I10E in patients with CIDP."
+    },
+    {
+      "nct_id": "NCT01030887",
+      "title": "PEACH Trial: Prescribed Exercise After Chemotherapy",
+      "conditions": [
+        "Cancer"
+      ],
+      "sponsor": "University of Dublin, Trinity College",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2010-01",
+      "primary_completion": "2011-08",
+      "enrollment": 43,
+      "brief_summary": "Many cancer survivors suffer symptoms such as fatigue and dyspnea which may persist for years or months after their chemotherapy has finished. Despite the known benefits of exercise and its potential "
+    },
+    {
+      "nct_id": "NCT00002961",
+      "title": "Chemotherapy With or Without Total-Body Irradiation Prior to Bone Marrow Transplantation in Treating Children With Acute",
+      "conditions": [
+        "Leukemia"
+      ],
+      "sponsor": "Children's Hospital of Philadelphia",
+      "phase": "PHASE3",
+      "status": "TERMINATED",
+      "start_date": "1995-10",
+      "primary_completion": "2001-02",
+      "enrollment": 43,
+      "brief_summary": "RATIONALE: Drugs used in chemotherapy use different ways to stop cancer cells from dividing so they stop growing or die. Combining chemotherapy with bone marrow transplantation may allow the doctor to"
+    },
+    {
+      "nct_id": "NCT00004376",
+      "title": "Phase III Randomized, Double-Blind, Placebo-Controlled Study of Guanfacine for Tourette Syndrome and Attention Deficit H",
+      "conditions": [
+        "Tourette Syndrome"
+      ],
+      "sponsor": "National Center for Research Resources (NCRR)",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "1994-09",
+      "primary_completion": "",
+      "enrollment": 35,
+      "brief_summary": "OBJECTIVES:\n\nI. Evaluate the safety and efficacy of the alpha-2 adrenergic agonist guanfacine in children and adolescents with Tourette syndrome or other chronic tic disorder, and attention deficit hy"
+    },
+    {
+      "nct_id": "NCT00004939",
+      "title": "Phase III Randomized, Double-Blind, Placebo-Controlled Study of 3,4-Diaminopyridine for Demyelinating Polyneuropathy",
+      "conditions": [
+        "Polyradiculoneuropathy, Chronic Inflammatory Demyelinating"
+      ],
+      "sponsor": "National Center for Research Resources (NCRR)",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "1996-08",
+      "primary_completion": "",
+      "enrollment": 34,
+      "brief_summary": "OBJECTIVES:\n\nI. Assess the efficacy of 3,4-diaminopyridine in patients with stable chronic demyelinating polyneuropathy."
+    },
+    {
+      "nct_id": "NCT05770544",
+      "title": "DETERMINE Trial Treatment Arm 03: Entrectinib in Adult, Paediatric and Teenage/Young Adult Patients With ROS1 Gene Fusio",
+      "conditions": [
+        "Haematological Malignancy",
+        "Malignancy",
+        "Malignant Neoplasm"
+      ],
+      "sponsor": "Cancer Research UK",
+      "phase": "PHASE2,PHASE3",
+      "status": "RECRUITING",
+      "start_date": "2025-11-30",
+      "primary_completion": "2029-10",
+      "enrollment": 30,
+      "brief_summary": "This clinical trial is looking at a drug called entrectinib. Entrectinib is approved as standard of care treatment for adult patients with non-small cell lung cancer (NSCLC) which have a particular mo"
+    },
+    {
+      "nct_id": "NCT06988475",
+      "title": "DETERMINE Trial Treatment Arm 06: Capmatinib in Adult Patients With Cancers Harbouring MET Dysregulations",
+      "conditions": [
+        "Solid Tumour",
+        "Haematological Malignancy",
+        "Malignant Neoplasm"
+      ],
+      "sponsor": "Cancer Research UK",
+      "phase": "PHASE2,PHASE3",
+      "status": "RECRUITING",
+      "start_date": "2024-11-19",
+      "primary_completion": "2029-10",
+      "enrollment": 30,
+      "brief_summary": "This clinical trial is looking at a drug called capmatinib. Capmatinib is approved as standard of care treatment for adult patients with certain types of lung cancer. This means it has gone through cl"
+    },
+    {
+      "nct_id": "NCT00004421",
+      "title": "Deep Brain Stimulation in Treating Patients With Dystonia",
+      "conditions": [
+        "Dystonia"
+      ],
+      "sponsor": "Icahn School of Medicine at Mount Sinai",
+      "phase": "PHASE2,PHASE3",
+      "status": "COMPLETED",
+      "start_date": "1997-09",
+      "primary_completion": "",
+      "enrollment": 15,
+      "brief_summary": "RATIONALE: Dystonia is a disorder in which the muscles that control voluntary movements are persistently or intermittently contracted (not relaxed). Deep brain stimulation is provided by a small, batt"
+    },
+    {
+      "nct_id": "NCT02230566",
+      "title": "A Phase 3 Study of UX003 Recombinant Human Betaglucuronidase (rhGUS) Enzyme Replacement Therapy in Patients With Mucopol",
+      "conditions": [
+        "MPS 7",
+        "Sly Syndrome",
+        "Mucopolysaccharidosis"
+      ],
+      "sponsor": "Ultragenyx Pharmaceutical Inc",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2014-12",
+      "primary_completion": "2016-05",
+      "enrollment": 12,
+      "brief_summary": "The Phase 3 study will use a novel randomized, intra-subject placebo-controlled, single crossover design, referred to as Blind Start, to evaluate the safety and efficacy of UX003. The Blind Start is a"
+    },
+    {
+      "nct_id": "NCT01749111",
+      "title": "Comparison Between Cyclophosphamide and Combination of Methotrexate + Calcineurin Inhibitor for GVHD Prophylaxis",
+      "conditions": [
+        "Acute Myelogenous Leukemia",
+        "Acute Lymphoid Leukemia",
+        "Myeloproliferative Disease"
+      ],
+      "sponsor": "Hospital Israelita Albert Einstein",
+      "phase": "PHASE3",
+      "status": "TERMINATED",
+      "start_date": "2012-12",
+      "primary_completion": "2016-08",
+      "enrollment": 3,
+      "brief_summary": "The purpose of this study is to determine whether cyclophosphamide post bone marrow transplant increases the rate of patients alive, in remission and without immunosuppression, one year after transpla"
+    },
+    {
+      "nct_id": "NCT00047593",
+      "title": "Phase 3 Study Comparing IOP Lowering in OAG or OH in Japanese Subjects C-01-98",
+      "conditions": [
+        "Open-Angle Glaucoma",
+        "Ocular Hypertension"
+      ],
+      "sponsor": "Alcon Research",
+      "phase": "PHASE3",
+      "status": "COMPLETED",
+      "start_date": "2000-01",
+      "primary_completion": "2004-07",
+      "enrollment": 0,
+      "brief_summary": "The purpose of this study is to evaluate safety and efficacy of two different IOP lowering medications after twelve months of treatment in Japanese subjects."
+    },
+    {
+      "nct_id": "NCT03628053",
+      "title": "Tisagenlecleucel vs Blinatumomab or Inotuzumab for Patients With Relapsed/Refractory B-cell Precursor Acute Lymphoblasti",
+      "conditions": [
+        "Acute Lymphoblastic Leukemia"
+      ],
+      "sponsor": "Novartis Pharmaceuticals",
+      "phase": "PHASE3",
+      "status": "WITHDRAWN",
+      "start_date": "2020-06-05",
+      "primary_completion": "2025-10-08",
+      "enrollment": 0,
+      "brief_summary": "This trial aims to compare the benefits and risks of tisagenlecleucel to blinatumomab or inotuzumab in adult patients with relapsed or refractory ALL. This trial investigates tisagenlecleucel as an ad"
+    }
+  ]
+}
