@@ -320,30 +320,39 @@ td a:hover { text-decoration:underline; }
 <!-- ══ PIPELINE INTELLIGENCE ══ -->
 <div class="tab-panel" id="tab-pipeline">
   <div class="page-title">🧬 Pipeline Intelligence</div>
-  <div class="page-sub">3,061-program proprietary database · rNPV-weighted · click charts to filter table below</div>
+  <div class="page-sub">Phase 2/3 programs · ClinicalTrials.gov API v2 · rNPV-weighted · <span id="pipe-source-lbl" style="color:var(--accent);cursor:pointer;text-decoration:underline dotted" onclick="showPipeSource()">Source & Methodology ↗</span></div>
   <div class="grid g4" id="pipeline-kpis"></div>
   <div class="grid g3" style="margin-top:14px">
-    <div class="chart-card"><h3>Programs by Phase <span style="color:var(--accent);font-size:.6rem">[click bar]</span></h3>
+    <div class="chart-card"><h3>Programs by Phase <span style="color:var(--accent);font-size:.6rem">[click bar to filter]</span></h3>
       <div style="height:200px"><canvas id="phaseChart"></canvas></div></div>
-    <div class="chart-card"><h3>Top Therapeutic Areas <span style="color:var(--accent);font-size:.6rem">[click bar]</span></h3>
+    <div class="chart-card"><h3>Therapeutic Area Breakdown <span style="color:var(--accent);font-size:.6rem">[click bar to filter]</span></h3>
       <div style="height:200px"><canvas id="taChart"></canvas></div></div>
     <div class="chart-card"><h3>Modality Split</h3>
       <div style="height:200px"><canvas id="modalityChart"></canvas></div></div>
   </div>
   <div class="chart-card" style="margin-top:14px">
-    <h3>Top 15 Targets by Program Count</h3>
+    <h3>Top Molecular Targets by Program Count</h3>
     <div style="height:150px"><canvas id="targetChart"></canvas></div>
   </div>
-  <div class="sec-label">Phase 3 Heatmap — Modality × TA &nbsp;<span style="font-size:.65rem;font-weight:400">click cell to filter</span></div>
+  <div class="sec-label">Phase 2/3 Heatmap — Modality × Therapeutic Area &nbsp;<span style="font-size:.65rem;font-weight:400">click cell to filter</span></div>
   <div style="overflow-x:auto"><table class="heatmap" id="heatmap-table"></table></div>
-  <div class="sec-label">Top Phase 3 Assets <span id="p3-filter-lbl" style="color:var(--accent);font-size:.7rem;font-weight:400"></span></div>
-  <div class="filter-bar">
-    <input type="text" id="p3-search" placeholder="Target, sponsor, indication..."/>
-    <button class="btn-clear" id="p3-clear">Clear Filter</button>
+  <div class="sec-label" style="margin-top:14px">Pipeline Assets
+    <span id="p3-filter-lbl" style="color:var(--accent);font-size:.7rem;font-weight:400"></span>
+  </div>
+  <div class="filter-bar" style="flex-wrap:wrap;gap:6px">
+    <input type="text" id="p3-search" placeholder="Drug, target, sponsor, indication..."/>
+    <select id="p3-phase-filter"><option value="">All Phases</option><option value="PHASE3">Phase 3</option><option value="PHASE2">Phase 2</option></select>
+    <select id="p3-ta-filter"><option value="">All TAs</option><option>Oncology</option><option>Immunology</option><option>Metabolic</option><option>Neurology</option><option>Rare Disease</option><option>Infectious</option><option>Respiratory</option><option>Hematology</option></select>
+    <select id="p3-mod-filter"><option value="">All Modalities</option><option>Monoclonal Antibody</option><option>Small Molecule</option><option>Bispecific Antibody</option><option>siRNA / RNAi</option><option>Gene Therapy</option><option>mRNA</option><option>ADC</option><option>Fusion Protein</option><option>Biologic</option></select>
+    <select id="p3-co-filter"><option value="">All Companies</option><option>LLY</option><option>ABBV</option><option>REGN</option><option>VRTX</option><option>AMGN</option><option>GILD</option><option>BMY</option><option>PFE</option><option>MRNA</option><option>BIIB</option><option>ALNY</option><option>INCY</option></select>
+    <button class="btn-clear" id="p3-clear">Clear All</button>
     <span class="filter-count" id="p3-cnt"></span>
   </div>
   <div class="tbl-wrap"><table>
-    <thead><tr><th>NCT ID</th><th>Target</th><th>Modality</th><th>Indication</th><th>Sponsor</th><th>PoS %</th><th>rNPV $M</th><th>Status</th></tr></thead>
+    <thead><tr>
+      <th>NCT ID</th><th>Drug Name</th><th>Target</th><th>Modality</th><th>Indication</th>
+      <th>Company</th><th>Phase</th><th>PoS %</th><th>rNPV $M</th><th>Status</th><th>Detail</th>
+    </tr></thead>
     <tbody id="p3-body"></tbody>
   </table></div>
 </div>
@@ -351,20 +360,32 @@ td a:hover { text-decoration:underline; }
 <!-- ══ CLINICAL TRIALS ══ -->
 <div class="tab-panel" id="tab-trials">
   <div class="page-title">🔬 Clinical Trials</div>
-  <div class="page-sub">Phase 3 studies · ClinicalTrials.gov V2 API</div>
+  <div class="page-sub">Phase 2/3 studies · ClinicalTrials.gov API v2 · <span style="color:var(--accent);cursor:pointer;text-decoration:underline dotted" onclick="showTrialSource()">Source info ↗</span> · click any row for full trial detail</div>
   <div class="grid g4" id="trials-kpis"></div>
-  <div class="sec-label">Study List</div>
-  <div class="filter-bar">
-    <input type="text" id="trial-search" placeholder="Title, sponsor, condition..."/>
+  <div class="grid g2" style="margin-top:14px">
+    <div class="chart-card"><h3>Trials by Therapeutic Area</h3>
+      <div style="height:200px"><canvas id="trials-ta-chart"></canvas></div></div>
+    <div class="chart-card"><h3>Enrollment by Status</h3>
+      <div style="height:200px"><canvas id="trials-status-chart"></canvas></div></div>
+  </div>
+  <div class="sec-label" style="margin-top:14px">Study List</div>
+  <div class="filter-bar" style="flex-wrap:wrap;gap:6px">
+    <input type="text" id="trial-search" placeholder="Title, drug, sponsor, condition..."/>
     <select id="trial-status">
       <option value="">All Statuses</option>
       <option>RECRUITING</option><option>ACTIVE_NOT_RECRUITING</option>
       <option>COMPLETED</option><option>NOT_YET_RECRUITING</option>
     </select>
+    <select id="trial-ta-filter"><option value="">All TAs</option><option>Oncology</option><option>Immunology</option><option>Metabolic</option><option>Neurology</option><option>Rare Disease</option><option>Infectious</option><option>Respiratory</option><option>Hematology</option></select>
+    <select id="trial-phase-filter"><option value="">All Phases</option><option value="PHASE3">Phase 3</option><option value="PHASE2">Phase 2</option></select>
+    <select id="trial-co-filter"><option value="">All Companies</option><option>LLY</option><option>ABBV</option><option>REGN</option><option>VRTX</option><option>AMGN</option><option>GILD</option><option>BMY</option><option>PFE</option><option>MRNA</option><option>BIIB</option><option>ALNY</option><option>INCY</option></select>
     <span class="filter-count" id="trial-cnt"></span>
   </div>
   <div class="tbl-wrap"><table>
-    <thead><tr><th>NCT ID</th><th>Title</th><th>Condition</th><th>Sponsor</th><th>Phase</th><th>Status</th><th>Start</th><th>Enrollment</th></tr></thead>
+    <thead><tr>
+      <th>NCT ID</th><th>Drug Name</th><th>Therapeutic Area</th><th>Company</th>
+      <th>Phase</th><th>Status</th><th>Primary Endpoint (summary)</th><th>N</th><th>Completion</th>
+    </tr></thead>
     <tbody id="trials-body"></tbody>
   </table></div>
 </div>
@@ -372,23 +393,27 @@ td a:hover { text-decoration:underline; }
 <!-- ══ PUBMED ══ -->
 <div class="tab-panel" id="tab-pubmed">
   <div class="page-title">📚 PubMed Signals</div>
-  <div class="page-sub">Recent publications · key oncology targets · click bar chart to filter</div>
-  <div class="grid g3" id="pubmed-kpis"></div>
-  <div class="grid g2" style="margin-top:14px">
-    <div class="chart-card"><h3>Papers per Target <span style="color:var(--accent);font-size:.6rem">[click to filter]</span></h3>
+  <div class="page-sub">Drug-level clinical literature · PubMed E-utilities · last 12 months · <span style="color:var(--accent);cursor:pointer;text-decoration:underline dotted" onclick="showPubmedSource()">Source info ↗</span> · click row for abstract & links</div>
+  <div class="grid g4" id="pubmed-kpis"></div>
+  <div class="grid g3" style="margin-top:14px">
+    <div class="chart-card"><h3>Papers by Drug/Target <span style="color:var(--accent);font-size:.6rem">[click to filter]</span></h3>
       <div style="height:220px"><canvas id="pubmedChart"></canvas></div></div>
-    <div class="chart-card"><h3>Publications by Year</h3>
-      <div style="height:220px"><canvas id="pubmedTimeChart"></canvas></div></div>
+    <div class="chart-card"><h3>Coverage by Company</h3>
+      <div style="height:220px"><canvas id="pubmedCoChart"></canvas></div></div>
+    <div class="chart-card"><h3>Papers by Therapeutic Area</h3>
+      <div style="height:220px"><canvas id="pubmedTaChart"></canvas></div></div>
   </div>
   <div class="sec-label">Publications <span id="pubmed-filter-lbl" style="color:var(--accent)"></span></div>
-  <div class="filter-bar">
-    <input type="text" id="pubmed-search" placeholder="Title, author, journal..."/>
-    <select id="pubmed-target"><option value="">All Targets</option></select>
+  <div class="filter-bar" style="flex-wrap:wrap;gap:6px">
+    <input type="text" id="pubmed-search" placeholder="Title, author, drug, journal..."/>
+    <select id="pubmed-target"><option value="">All Drugs / Targets</option></select>
+    <select id="pubmed-co-filter"><option value="">All Companies</option><option>LLY</option><option>ABBV</option><option>REGN</option><option>VRTX</option><option>AMGN</option><option>GILD</option><option>BMY</option><option>PFE</option><option>MRNA</option><option>BIIB</option><option>ALNY</option><option>INCY</option><option>General</option></select>
+    <select id="pubmed-ta-filter"><option value="">All TAs</option><option>Oncology</option><option>Immunology</option><option>Metabolic</option><option>Neurology</option><option>Rare Disease</option><option>Infectious</option><option>Respiratory</option></select>
     <button class="btn-clear" id="pubmed-clear">Clear</button>
     <span class="filter-count" id="pubmed-cnt"></span>
   </div>
   <div class="tbl-wrap"><table>
-    <thead><tr><th>PMID</th><th>Title</th><th>Authors</th><th>Journal</th><th>Date</th><th>Target</th></tr></thead>
+    <thead><tr><th>PMID</th><th>Title</th><th>Drug</th><th>Company</th><th>Target</th><th>TA</th><th>Journal</th><th>Date</th></tr></thead>
     <tbody id="pubmed-body"></tbody>
   </table></div>
 </div>
@@ -1109,21 +1134,29 @@ const F = { ta: null, modality: null, search: '' };
 // ════════════════════════════════════════════════════════
 (function() {
   const kpi = D.kpi;
+  const pSrc = D.pipelineSource || {};
+  // Source retrieved timestamp for subtitle
+  if (pSrc.retrieved) {
+    const lbl = document.getElementById('pipe-source-lbl');
+    if (lbl) lbl.title = 'Retrieved: ' + pSrc.retrieved;
+  }
+
   document.getElementById('pipeline-kpis').innerHTML =
-    kpiCard('Total Programs',  kpi.total_programs.toLocaleString(), 'all phases',          '', '', 'blue') +
+    kpiCard('Total Programs',  kpi.total_programs.toLocaleString(), 'Phase 2+3 across all TAs', '', '', 'blue') +
     kpiCard('Phase 3',         kpi.phase3_count,   'late-stage assets',   '', '', 'green') +
-    kpiCard('Disruptive',      kpi.disruptive_count,'novel mechanisms',   '', '', 'warn') +
-    kpiCard('Pipeline rNPV',   '$' + kpi.pipeline_rnpv_b.toLocaleString() + 'B', 'risk-adjusted value', '', '', 'red');
+    kpiCard('Disruptive',      kpi.disruptive_count,'siRNA / ADC / Bispecific / Gene Therapy', '', '', 'warn') +
+    kpiCard('Pipeline rNPV',   '$' + kpi.pipeline_rnpv_b.toLocaleString() + 'B', 'risk-adjusted value estimate', '', '', 'red');
 
   // Phase chart
   const phaseChart = new Chart(document.getElementById('phaseChart'), {
     type: 'bar',
-    data: { labels: D.phaseLabels, datasets: [{ label: 'Programs', data: D.phaseData, backgroundColor: D.phaseLabels.map((_, i) => 'hsl(' + (200 + i * 18) + ',65%,' + (52 + i * 2) + '%)'), borderRadius: 5 }] },
+    data: { labels: D.phaseLabels, datasets: [{ label: 'Programs', data: D.phaseData,
+      backgroundColor: D.phaseLabels.map((_, i) => 'hsl(' + (200 + i * 18) + ',65%,' + (52 + i * 2) + '%)'), borderRadius: 5 }] },
     options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { font: { size: 9 } } }, y: { beginAtZero: true } } }
   });
   phaseChart.canvas.addEventListener('click', evt => {
     const pts = phaseChart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, true);
-    if (pts.length) { F.search = D.phaseLabels[pts[0].index]; renderP3(); }
+    if (pts.length) { F.phase = D.phaseLabels[pts[0].index]; renderP3(); }
   });
 
   const taChart = new Chart(document.getElementById('taChart'), {
@@ -1133,19 +1166,24 @@ const F = { ta: null, modality: null, search: '' };
   });
   taChart.canvas.addEventListener('click', evt => {
     const pts = taChart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, true);
-    if (pts.length) { F.ta = D.taLabels[pts[0].index]; renderP3(); }
+    if (pts.length) { F.ta = D.taLabels[pts[0].index]; document.getElementById('p3-ta-filter').value = D.taLabels[pts[0].index]; renderP3(); }
   });
 
   new Chart(document.getElementById('modalityChart'), {
     type: 'doughnut',
-    data: { labels: D.modLabels, datasets: [{ data: D.modData, backgroundColor: ['#4f8ef7','#22d3a5','#f7b94f','#f74f4f','#a78bfa','#34d399','#fb923c','#60a5fa'], borderWidth: 2, borderColor: '#131720' }] },
-    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right', labels: { font: { size: 9 }, boxWidth: 10 } } } }
+    data: { labels: D.modLabels, datasets: [{ data: D.modData,
+      backgroundColor: ['#4f8ef7','#22d3a5','#f7b94f','#f74f4f','#a78bfa','#34d399','#fb923c','#60a5fa'],
+      borderWidth: 2, borderColor: '#131720' }] },
+    options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { position: 'right', labels: { font: { size: 9 }, boxWidth: 10 } } } }
   });
 
   new Chart(document.getElementById('targetChart'), {
     type: 'bar',
     data: { labels: D.tgtLabels, datasets: [{ label: 'Programs', data: D.tgtData, backgroundColor: C.green, borderRadius: 4 }] },
-    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { font: { size: 9 } } }, y: { beginAtZero: true } } }
+    options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { x: { ticks: { font: { size: 9 } } }, y: { beginAtZero: true } } }
   });
 
   // Heatmap
@@ -1158,134 +1196,303 @@ const F = { ta: null, modality: null, search: '' };
       D.hmInds.map(ind => {
         const v = (D.heatmap[mod] || {})[ind] || 0;
         const cls = v === 0 ? 'hm0' : v < 5 ? 'hm1' : v < 15 ? 'hm2' : v < 30 ? 'hm3' : v < 60 ? 'hm4' : 'hm5';
-        return '<td class="' + cls + '" onclick="F.ta=\'' + ind + '\';F.modality=\'' + mod + '\';renderP3()">' + (v || '') + '</td>';
+        return '<td class="' + cls + '" onclick="F.ta=\'' + ind + '\';F.modality=\'' + mod + '\';document.getElementById(\'p3-ta-filter\').value=\'' + ind + '\';document.getElementById(\'p3-mod-filter\').value=\'' + mod + '\';renderP3()">' + (v || '') + '</td>';
       }).join('');
     htbody.appendChild(tr);
   });
   tbl.appendChild(htbody);
 
-  // P3 table
+  // Full asset list from all_trials
+  const allAssets = D.allTrials || D.p3assets || [];
+
   window.renderP3 = function() {
-    const q = (F.search || document.getElementById('p3-search').value || '').toLowerCase();
-    const data = D.p3assets.filter(a =>
-      (!F.ta       || a.indication === F.ta) &&
-      (!F.modality || a.modality   === F.modality) &&
-      (!q          || a.target.toLowerCase().includes(q) || a.sponsor.toLowerCase().includes(q) || a.indication.toLowerCase().includes(q)));
+    const q      = (document.getElementById('p3-search').value || '').toLowerCase();
+    const phase  = document.getElementById('p3-phase-filter').value || F.phase || '';
+    const ta     = document.getElementById('p3-ta-filter').value    || F.ta    || '';
+    const mod    = document.getElementById('p3-mod-filter').value   || F.modality || '';
+    const co     = document.getElementById('p3-co-filter').value    || '';
+
+    const data = allAssets.filter(a =>
+      (!phase   || a.phase === phase) &&
+      (!ta      || a.indication === ta || a.therapeutic_area === ta) &&
+      (!mod     || a.modality === mod) &&
+      (!co      || a.ticker === co) &&
+      (!q       || (a.drug_name||'').toLowerCase().includes(q) ||
+                   (a.target||'').toLowerCase().includes(q) ||
+                   (a.sponsor||'').toLowerCase().includes(q) ||
+                   (a.indication||'').toLowerCase().includes(q) ||
+                   (a.nct_id||'').toLowerCase().includes(q)));
+
     const tbody = document.getElementById('p3-body');
     tbody.innerHTML = '';
-    data.forEach(a => {
+    data.slice(0, 200).forEach(a => {
       const tr = document.createElement('tr');
-      tr.innerHTML = '<td><a href="https://clinicaltrials.gov/study/' + (a.nct_id||'') + '" target="_blank">' + (a.nct_id||'—') + '</a></td>' +
-        '<td><strong>' + (a.target||'—') + '</strong></td>' +
+      tr.style.cursor = 'pointer';
+      const phaseBadge = a.phase === 'PHASE3' ? '<span class="badge b-green" style="font-size:.62rem">P3</span>' : '<span class="badge b-blue" style="font-size:.62rem">P2</span>';
+      const disBadge   = a.disruptive ? '<span style="font-size:.65rem">⚡</span>' : '';
+      tr.innerHTML =
+        '<td><a href="https://clinicaltrials.gov/study/' + (a.nct_id||'') + '" target="_blank" onclick="event.stopPropagation()">' + (a.nct_id||'—') + '</a></td>' +
+        '<td><strong>' + (a.drug_name || '—').substring(0,28) + '</strong>' + disBadge + '</td>' +
+        '<td style="font-size:.78rem">' + (a.target||'—') + '</td>' +
         '<td>' + badge(a.modality, 'b-blue') + '</td>' +
-        '<td>' + a.indication + '</td><td>' + a.sponsor + '</td>' +
+        '<td>' + (a.indication||a.therapeutic_area||'—') + '</td>' +
+        '<td>' + badge(a.ticker||'', 'b-neut') + '</td>' +
+        '<td>' + phaseBadge + '</td>' +
         '<td>' + (a.pos ? a.pos + '%' : '—') + '</td>' +
         '<td>' + (a.rnpv_mid_m ? '$' + a.rnpv_mid_m.toLocaleString() : '—') + '</td>' +
-        '<td>' + stsBadge(a.status) + '</td>';
+        '<td>' + stsBadge(a.status) + '</td>' +
+        '<td><button class="btn-clear" style="font-size:.65rem;padding:2px 6px" onclick="event.stopPropagation();openTrialDetail(window.__trialMap[' + JSON.stringify(a.nct_id) + ']||{nct_id:' + JSON.stringify(a.nct_id) + '})">Detail</button></td>';
+      tr.onclick = () => openTrialDetail(window.__trialMap[a.nct_id] || a);
       tbody.appendChild(tr);
     });
     document.getElementById('p3-cnt').textContent = data.length + ' assets';
-    const active = [F.ta, F.modality].filter(Boolean);
+    const active = [phase && ('Phase:'+phase), ta, mod, co && ('Co:'+co)].filter(Boolean);
     document.getElementById('p3-filter-lbl').textContent = active.length ? '(filter: ' + active.join(' · ') + ')' : '';
   };
-  document.getElementById('p3-clear').onclick = () => { Object.assign(F, { ta: null, modality: null, search: '' }); document.getElementById('p3-search').value = ''; renderP3(); };
+
+  // Build trial map for detail access from slim_trials (includes brief_summary)
+  window.__trialMap = {};
+  allAssets.forEach(a => { if (a.nct_id) window.__trialMap[a.nct_id] = a; });
+
+  document.getElementById('p3-clear').onclick = () => {
+    Object.assign(F, { ta: null, modality: null, phase: null, search: '' });
+    ['p3-search','p3-phase-filter','p3-ta-filter','p3-mod-filter','p3-co-filter'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.value = '';
+    });
+    renderP3();
+  };
   document.getElementById('p3-search').addEventListener('input', renderP3);
+  ['p3-phase-filter','p3-ta-filter','p3-mod-filter','p3-co-filter'].forEach(id => {
+    document.getElementById(id).addEventListener('change', renderP3);
+  });
   renderP3();
 })();
+
 
 // ════════════════════════════════════════════════════════
 // 3. CLINICAL TRIALS
 // ════════════════════════════════════════════════════════
 (function() {
+  const allTrials = D.trials || [];
   const bs = D.trialsByStatus || {};
+
   document.getElementById('trials-kpis').innerHTML =
-    kpiCard('Total P3 Studies', D.trialsCount, 'in database', '', '', 'blue') +
-    kpiCard('Recruiting',  bs.RECRUITING||0, 'active enrollment', '', '', 'green') +
-    kpiCard('Active',      bs.ACTIVE_NOT_RECRUITING||0, 'ongoing', '', '', 'warn') +
-    kpiCard('Completed',   bs.COMPLETED||0,  'recent readouts', '', '', 'red');
+    kpiCard('Total Studies', allTrials.length.toLocaleString(), 'Phase 2+3 in database', '', '', 'blue') +
+    kpiCard('Recruiting',    bs.RECRUITING||0, 'active enrollment', '', '', 'green') +
+    kpiCard('Active (non-recruiting)', bs.ACTIVE_NOT_RECRUITING||0, 'ongoing', '', '', 'warn') +
+    kpiCard('Completed',     bs.COMPLETED||0,  'recent readouts', '', '', 'red');
+
+  // TA breakdown chart
+  const taCounts = {};
+  allTrials.forEach(t => { const ta = t.therapeutic_area || t.indication || 'Other'; taCounts[ta] = (taCounts[ta]||0)+1; });
+  const taSorted = Object.entries(taCounts).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  if (document.getElementById('trials-ta-chart')) {
+    new Chart(document.getElementById('trials-ta-chart'), {
+      type: 'bar',
+      data: { labels: taSorted.map(x=>x[0]), datasets: [{ data: taSorted.map(x=>x[1]), backgroundColor: C.blue, borderRadius: 4, label: 'Trials' }] },
+      options: { indexAxis:'y', responsive:true, maintainAspectRatio:false,
+        plugins:{ legend:{display:false} }, scales:{ x:{beginAtZero:true}, y:{ticks:{font:{size:9}}} } }
+    });
+  }
+  // Status chart
+  const statusColors = { RECRUITING:'#22D3A5', ACTIVE_NOT_RECRUITING:'#F7C948', COMPLETED:'#4f8ef7', NOT_YET_RECRUITING:'#a78bfa', TERMINATED:'#F74F4F' };
+  const statusCounts = {};
+  allTrials.forEach(t => { statusCounts[t.status||t.overall_status||'Unknown'] = (statusCounts[t.status||t.overall_status||'Unknown']||0)+1; });
+  if (document.getElementById('trials-status-chart')) {
+    const sKeys = Object.keys(statusCounts).sort((a,b)=>statusCounts[b]-statusCounts[a]).slice(0,6);
+    new Chart(document.getElementById('trials-status-chart'), {
+      type: 'doughnut',
+      data: { labels: sKeys, datasets: [{ data: sKeys.map(k=>statusCounts[k]),
+        backgroundColor: sKeys.map(k=>statusColors[k]||'#7a85a3'), borderWidth: 2, borderColor: '#131720' }] },
+      options: { responsive:true, maintainAspectRatio:false,
+        plugins:{ legend:{ position:'right', labels:{ font:{size:9}, boxWidth:10 } } } }
+    });
+  }
+
   const tbody = document.getElementById('trials-body');
   const cnt   = document.getElementById('trial-cnt');
+
   function render(data) {
     tbody.innerHTML = '';
-    data.forEach(s => {
+    data.slice(0,200).forEach(t => {
       const tr = document.createElement('tr');
-      tr.innerHTML = '<td><a href="https://clinicaltrials.gov/study/' + s.nct_id + '" target="_blank">' + s.nct_id + '</a></td>' +
-        '<td style="max-width:280px">' + s.title + '</td>' +
-        '<td>' + ((s.conditions||[]).join(', ')||'—') + '</td><td>' + s.sponsor + '</td>' +
-        '<td>' + badge(s.phase,'b-blue') + '</td><td>' + stsBadge(s.status) + '</td>' +
-        '<td>' + (s.start_date||'—') + '</td>' +
-        '<td>' + (s.enrollment ? s.enrollment.toLocaleString() : '—') + '</td>';
+      tr.style.cursor = 'pointer';
+      const ta    = t.therapeutic_area || t.indication || (t.conditions||[]).join(', ') || '—';
+      const drug  = t.drug_name || (t.drug_names||[])[0] || '—';
+      const ep    = (t.primary_endpoint || '').substring(0,60);
+      const phaseBadge = (t.phase||'') === 'PHASE3' ? badge('P3','b-green') : badge(t.phase||'—','b-blue');
+      tr.innerHTML =
+        '<td><a href="' + (t.source_url||'https://clinicaltrials.gov/study/'+t.nct_id) + '" target="_blank" onclick="event.stopPropagation()" style="font-size:.8rem">' + t.nct_id + '</a></td>' +
+        '<td><strong style="font-size:.82rem">' + drug.substring(0,25) + '</strong></td>' +
+        '<td><span class="badge b-neut" style="font-size:.65rem">' + ta.substring(0,20) + '</span></td>' +
+        '<td>' + badge(t.ticker||t.sponsor.split(' ')[0].substring(0,5)||'','b-neut') + '</td>' +
+        '<td>' + phaseBadge + '</td>' +
+        '<td>' + stsBadge(t.status||t.overall_status||'') + '</td>' +
+        '<td style="font-size:.72rem;color:var(--muted);max-width:200px">' + ep + (ep.length === 60 ? '…' : '') + '</td>' +
+        '<td style="font-size:.8rem">' + (t.enrollment ? t.enrollment.toLocaleString() : '—') + '</td>' +
+        '<td style="font-size:.75rem;color:var(--muted)">' + (t.completion_date||t.primary_completion||'—').substring(0,10) + '</td>';
+      tr.onclick = () => openTrialDetail(t);
       tbody.appendChild(tr);
     });
     cnt.textContent = data.length + ' studies';
   }
+
   function filtered() {
-    const q  = document.getElementById('trial-search').value.toLowerCase();
-    const st = document.getElementById('trial-status').value;
-    return D.trials.filter(s =>
-      (!q  || s.title.toLowerCase().includes(q) || s.sponsor.toLowerCase().includes(q) || (s.conditions||[]).join(' ').toLowerCase().includes(q)) &&
-      (!st || s.status === st));
+    const q    = document.getElementById('trial-search').value.toLowerCase();
+    const st   = document.getElementById('trial-status').value;
+    const ta   = document.getElementById('trial-ta-filter').value;
+    const ph   = document.getElementById('trial-phase-filter').value;
+    const co   = document.getElementById('trial-co-filter').value;
+    return allTrials.filter(t =>
+      (!q  || (t.title||'').toLowerCase().includes(q) || (t.drug_name||'').toLowerCase().includes(q) ||
+               (t.sponsor||'').toLowerCase().includes(q) || (t.conditions||[]).join(' ').toLowerCase().includes(q)) &&
+      (!st || (t.status||t.overall_status||'') === st) &&
+      (!ta || (t.therapeutic_area||t.indication||'') === ta) &&
+      (!ph || (t.phase||'') === ph) &&
+      (!co || (t.ticker||'') === co));
   }
-  render(D.trials);
-  document.getElementById('trial-search').addEventListener('input', () => render(filtered()));
-  document.getElementById('trial-status').addEventListener('change', () => render(filtered()));
+
+  render(allTrials);
+  ['trial-search'].forEach(id => document.getElementById(id).addEventListener('input', () => render(filtered())));
+  ['trial-status','trial-ta-filter','trial-phase-filter','trial-co-filter'].forEach(id => {
+    document.getElementById(id).addEventListener('change', () => render(filtered()));
+  });
 })();
+
 
 // ════════════════════════════════════════════════════════
 // 4. PUBMED
 // ════════════════════════════════════════════════════════
 (function() {
-  const tgtKeys = Object.keys(D.tgtCounts);
-  const sel = document.getElementById('pubmed-target');
-  tgtKeys.forEach(t => { const o = document.createElement('option'); o.value = t; o.text = t; sel.appendChild(o); });
+  // Support both old format (tgtCounts) and new format (drug_counts, company_counts)
+  const drugCounts  = D.drugCounts  || D.tgtCounts || {};
+  const coCounts    = D.pubmedCoCounts || {};
+  const taCounts2   = D.pubmedTaCounts || {};
+  const drugKeys    = Object.keys(drugCounts).slice(0, 20);
 
+  // KPIs
   document.getElementById('pubmed-kpis').innerHTML =
-    kpiCard('Papers Indexed', D.pubmedCount, 'clinical trial literature', '', '', 'blue') +
-    kpiCard('Targets Covered', tgtKeys.length, 'key biomarkers', '', '', 'green') +
-    kpiCard('Top Target', '<span class="kpi-val sm">' + (tgtKeys[0]||'—') + '</span>',
-      (Object.values(D.tgtCounts)[0]||0) + ' papers', '', '', 'warn');
+    kpiCard('Papers Indexed', D.pubmedCount, 'clinical & review literature, 12 months', '', '', 'blue') +
+    kpiCard('Drugs Covered',  drugKeys.length, 'drug-level search queries', '', '', 'green') +
+    kpiCard('Top Drug', '<span class="kpi-val sm">' + (drugKeys[0]||'—').substring(0,20) + '</span>',
+      (Object.values(drugCounts)[0]||0) + ' papers', '', '', 'warn') +
+    kpiCard('Source', '<span style="font-size:.7rem;font-weight:600">PubMed<br>E-utilities</span>', 'NCBI · last 365d', '', '', 'blue');
+
+  // Populate target/drug dropdown
+  const sel = document.getElementById('pubmed-target');
+  drugKeys.forEach(t => { const o = document.createElement('option'); o.value = t; o.text = t.substring(0,40); sel.appendChild(o); });
 
   let activeTarget = null;
+  let activeCo     = null;
+  let activeTa     = null;
+
+  // Drug/target bar chart
   const pubChart = new Chart(document.getElementById('pubmedChart'), {
     type: 'bar',
-    data: { labels: tgtKeys, datasets: [{ label: 'Papers', data: Object.values(D.tgtCounts), backgroundColor: C.blue, borderRadius: 4 }] },
-    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
+    data: { labels: drugKeys.map(k=>k.substring(0,18)),
+      datasets: [{ label: 'Papers', data: drugKeys.map(k=>drugCounts[k]), backgroundColor: C.blue, borderRadius: 4 }] },
+    options: { responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true }, x: { ticks: { font: { size: 8 }, maxRotation: 45 } } } }
   });
   pubChart.canvas.addEventListener('click', evt => {
     const pts = pubChart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, true);
-    if (pts.length) { activeTarget = tgtKeys[pts[0].index]; sel.value = activeTarget; renderPub(); }
+    if (pts.length) { activeTarget = drugKeys[pts[0].index]; sel.value = activeTarget; renderPub(); }
   });
-  const byYr = {};
-  D.papers.forEach(p => { const yr = (p.pub_date||'').slice(0,4); if (yr >= '2022') byYr[yr] = (byYr[yr]||0) + 1; });
-  new Chart(document.getElementById('pubmedTimeChart'), {
-    type: 'bar',
-    data: { labels: Object.keys(byYr).sort(), datasets: [{ label: 'Papers', data: Object.keys(byYr).sort().map(k=>byYr[k]), backgroundColor: C.green, borderRadius: 4 }] },
-    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
-  });
+
+  // Company bar chart
+  const coKeys = Object.keys(coCounts).sort((a,b)=>coCounts[b]-coCounts[a]);
+  if (document.getElementById('pubmedCoChart') && coKeys.length) {
+    const pubCoChart = new Chart(document.getElementById('pubmedCoChart'), {
+      type: 'bar',
+      data: { labels: coKeys, datasets: [{ label: 'Papers', data: coKeys.map(k=>coCounts[k]),
+        backgroundColor: '#22D3A5', borderRadius: 4 }] },
+      options: { responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { y: { beginAtZero: true }, x: { ticks: { font: { size: 9 } } } } }
+    });
+    pubCoChart.canvas.addEventListener('click', evt => {
+      const pts = pubCoChart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, true);
+      if (pts.length) { activeCo = coKeys[pts[0].index]; document.getElementById('pubmed-co-filter').value = activeCo; renderPub(); }
+    });
+  }
+
+  // TA chart
+  const taKeys2 = Object.keys(taCounts2).sort((a,b)=>taCounts2[b]-taCounts2[a]);
+  if (document.getElementById('pubmedTaChart') && taKeys2.length) {
+    new Chart(document.getElementById('pubmedTaChart'), {
+      type: 'doughnut',
+      data: { labels: taKeys2, datasets: [{ data: taKeys2.map(k=>taCounts2[k]),
+        backgroundColor: ['#4f8ef7','#22d3a5','#f7b94f','#f74f4f','#a78bfa','#34d399','#fb923c'],
+        borderWidth: 2, borderColor: '#131720' }] },
+      options: { responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { position: 'right', labels: { font: { size: 9 }, boxWidth: 10 } } } }
+    });
+  } else if (document.getElementById('pubmedTaChart')) {
+    // Fallback: build by year
+    const byYr = {};
+    D.papers.forEach(p => { const yr = (p.pub_date||'').slice(0,4); if (yr >= '2022') byYr[yr] = (byYr[yr]||0)+1; });
+    new Chart(document.getElementById('pubmedTaChart'), {
+      type: 'bar',
+      data: { labels: Object.keys(byYr).sort(), datasets: [{ label: 'Papers', data: Object.keys(byYr).sort().map(k=>byYr[k]), backgroundColor: C.warn, borderRadius: 4 }] },
+      options: { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{y:{beginAtZero:true}} }
+    });
+  }
+
   const tbody = document.getElementById('pubmed-body');
   const cnt   = document.getElementById('pubmed-cnt');
+
   function renderPub() {
-    const q = document.getElementById('pubmed-search').value.toLowerCase();
-    const t = activeTarget || sel.value;
-    const data = D.papers.filter(p => (!q || p.title.toLowerCase().includes(q) || p.authors.toLowerCase().includes(q)) && (!t || p.target_tag === t));
+    const q    = document.getElementById('pubmed-search').value.toLowerCase();
+    const t    = activeTarget || sel.value || '';
+    const co   = activeCo    || document.getElementById('pubmed-co-filter').value || '';
+    const ta   = activeTa    || document.getElementById('pubmed-ta-filter').value || '';
+
+    const data = D.papers.filter(p =>
+      (!q  || (p.title||'').toLowerCase().includes(q) || (p.authors||'').toLowerCase().includes(q) ||
+               (p.drug_name||'').toLowerCase().includes(q) || (p.journal||'').toLowerCase().includes(q)) &&
+      (!t  || p.target_tag === t || (p.drug_name||'').includes(t)) &&
+      (!co || (p.company||'') === co) &&
+      (!ta || (p.therapeutic_area||'') === ta));
+
     tbody.innerHTML = '';
-    data.forEach(p => {
+    data.slice(0,150).forEach(p => {
       const tr = document.createElement('tr');
-      const url = p.doi ? 'https://doi.org/' + p.doi : 'https://pubmed.ncbi.nlm.nih.gov/' + p.pmid + '/';
-      tr.innerHTML = '<td><a href="https://pubmed.ncbi.nlm.nih.gov/' + p.pmid + '/" target="_blank">' + p.pmid + '</a></td>' +
-        '<td style="max-width:320px"><a href="' + url + '" target="_blank">' + p.title + '</a></td>' +
-        '<td>' + p.authors + '</td><td style="white-space:nowrap">' + p.journal + '</td>' +
-        '<td style="white-space:nowrap">' + p.pub_date + '</td><td>' + badge(p.target_tag,'b-blue') + '</td>';
+      tr.style.cursor = 'pointer';
+      const pubUrl = 'https://pubmed.ncbi.nlm.nih.gov/' + p.pmid + '/';
+      tr.innerHTML =
+        '<td><a href="' + pubUrl + '" target="_blank" onclick="event.stopPropagation()" style="font-size:.78rem">' + p.pmid + '</a></td>' +
+        '<td style="max-width:280px"><span style="font-size:.8rem;color:#e2e8f0">' + (p.title||'').substring(0,90) + (p.title&&p.title.length>90?'…':'') + '</span></td>' +
+        '<td style="font-size:.78rem">' + badge(p.drug_name||'', 'b-green') + '</td>' +
+        '<td style="font-size:.78rem">' + badge(p.company||'', 'b-neut') + '</td>' +
+        '<td style="font-size:.78rem">' + (p.target_tag||'—').substring(0,20) + '</td>' +
+        '<td>' + badge(p.therapeutic_area||'', 'b-blue') + '</td>' +
+        '<td style="font-size:.72rem;color:var(--muted)">' + (p.journal||'').substring(0,25) + '</td>' +
+        '<td style="font-size:.75rem;white-space:nowrap">' + (p.pub_date||'').substring(0,10) + '</td>';
+      tr.onclick = () => openPaperDetail(p);
       tbody.appendChild(tr);
     });
     cnt.textContent = data.length + ' papers';
-    document.getElementById('pubmed-filter-lbl').textContent = t ? '· ' + t : '';
+
+    const active = [t&&('Drug:'+t.substring(0,15)), co, ta].filter(Boolean);
+    document.getElementById('pubmed-filter-lbl').textContent = active.length ? '· ' + active.join(' · ') : '';
   }
-  document.getElementById('pubmed-clear').onclick = () => { activeTarget = null; sel.value = ''; document.getElementById('pubmed-search').value = ''; renderPub(); };
+
+  document.getElementById('pubmed-clear').onclick = () => {
+    activeTarget = null; activeCo = null; activeTa = null;
+    ['pubmed-search'].forEach(id => { const el=document.getElementById(id); if(el) el.value=''; });
+    ['pubmed-target','pubmed-co-filter','pubmed-ta-filter'].forEach(id => { const el=document.getElementById(id); if(el) el.value=''; });
+    renderPub();
+  };
   document.getElementById('pubmed-search').addEventListener('input', renderPub);
-  sel.addEventListener('change', () => { activeTarget = sel.value || null; renderPub(); });
+  document.getElementById('pubmed-target').addEventListener('change', () => { activeTarget = document.getElementById('pubmed-target').value||null; renderPub(); });
+  ['pubmed-co-filter','pubmed-ta-filter'].forEach(id => {
+    document.getElementById(id).addEventListener('change', renderPub);
+  });
   renderPub();
 })();
+
 
 // ════════════════════════════════════════════════════════
 // 5. SEC FILINGS
@@ -3382,6 +3589,104 @@ function loadTV() {
   // Deferred — only renders when Company tab is clicked
   window.__renderCompany = renderCompany;
 })();
+
+// ── Source attribution modal openers ────────────────────
+function showPipeSource() {
+  document.getElementById('modal-title').textContent = '🧬 Pipeline Data — Source & Methodology';
+  document.getElementById('modal-sub').textContent = 'Audit trail for pipeline intelligence data';
+  const src = (D.pipelineSource) || {};
+  document.getElementById('modal-body').innerHTML =
+    '<div style="line-height:2;font-size:.85rem">' +
+    '<div><strong>Source:</strong> ' + (src.source || 'ClinicalTrials.gov API v2') + '</div>' +
+    '<div><strong>URL:</strong> <a href="' + (src.url || 'https://clinicaltrials.gov/api/v2/studies') + '" target="_blank" style="color:#60A5FA">' + (src.url || 'clinicaltrials.gov/api/v2/studies') + '</a></div>' +
+    '<div><strong>Retrieved:</strong> ' + (src.retrieved || 'See data file') + '</div>' +
+    '<div><strong>Method:</strong> ' + (src.method || 'Phase 2/3 per sponsor, 12 companies') + '</div>' +
+    '<div><strong>Companies:</strong> ' + (src.companies || 'LLY ABBV REGN VRTX AMGN GILD BMY PFE MRNA BIIB ALNY INCY').toString() + '</div>' +
+    '<div style="margin-top:12px;padding:10px;background:rgba(255,255,255,.04);border-radius:6px;font-size:.78rem;color:var(--muted)">' +
+    '<strong>Classification methodology:</strong><br>' +
+    'Therapeutic Area: Keyword match on MeSH condition terms<br>' +
+    'Modality: Drug name suffix + intervention type (e.g. -mab → mAb, -nib → small molecule)<br>' +
+    'Target: Known drug→target mapping dictionary + MeSH intervention browse<br>' +
+    'PoS: TA-level historical probability of success (Phase 3)<br>' +
+    'rNPV: PoS × TA median peak sales estimate' +
+    '</div></div>';
+  document.getElementById('modal').classList.add('open');
+}
+function showTrialSource() {
+  document.getElementById('modal-title').textContent = '🔬 Clinical Trials — Source & Methodology';
+  document.getElementById('modal-sub').textContent = 'Audit trail for clinical trials data';
+  const src = (D.trialsSource) || {};
+  document.getElementById('modal-body').innerHTML =
+    '<div style="line-height:2;font-size:.85rem">' +
+    '<div><strong>Source:</strong> ' + (src.source || 'ClinicalTrials.gov API v2') + '</div>' +
+    '<div><strong>URL:</strong> <a href="https://clinicaltrials.gov/api/v2/studies" target="_blank" style="color:#60A5FA">clinicaltrials.gov/api/v2/studies</a></div>' +
+    '<div><strong>Retrieved:</strong> ' + (src.retrieved || 'See data file') + '</div>' +
+    '<div><strong>Method:</strong> ' + (src.method || 'Phase 2/3, 12 biopharma sponsors') + '</div>' +
+    '<div style="margin-top:12px;font-size:.78rem;color:var(--muted)">Therapeutic Area classification uses MeSH condition term keyword matching. Drug name extracted from primary DRUG/BIOLOGICAL intervention.</div>' +
+    '</div>';
+  document.getElementById('modal').classList.add('open');
+}
+function showPubmedSource() {
+  document.getElementById('modal-title').textContent = '📚 PubMed — Source & Methodology';
+  document.getElementById('modal-sub').textContent = 'Audit trail for literature signals';
+  const src = (D.pubmedSource) || {};
+  document.getElementById('modal-body').innerHTML =
+    '<div style="line-height:2;font-size:.85rem">' +
+    '<div><strong>Source:</strong> ' + (src.source || 'PubMed E-utilities NCBI') + '</div>' +
+    '<div><strong>URL:</strong> <a href="https://eutils.ncbi.nlm.nih.gov/" target="_blank" style="color:#60A5FA">eutils.ncbi.nlm.nih.gov</a></div>' +
+    '<div><strong>Retrieved:</strong> ' + (src.retrieved || 'See data file') + '</div>' +
+    '<div><strong>Queries:</strong> ' + (src.queries || 35) + ' drug-level searches (last 365 days)</div>' +
+    '<div><strong>Method:</strong> ' + (src.method || 'Drug name search, clinical trial + review publications') + '</div>' +
+    '</div>';
+  document.getElementById('modal').classList.add('open');
+}
+function openTrialDetail(t) {
+  document.getElementById('modal-title').textContent = t.nct_id + ' — ' + (t.drug_name || t.title || '').substring(0,60);
+  document.getElementById('modal-sub').textContent = (t.therapeutic_area || t.indication || '') + ' · ' + t.phase + ' · ' + t.sponsor;
+  document.getElementById('modal-body').innerHTML =
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">' +
+    '<div><div style="color:var(--muted);font-size:.7rem;margin-bottom:2px">DRUG / INTERVENTION</div><div style="font-size:.9rem;font-weight:700">' + (t.drug_name || '—') + '</div></div>' +
+    '<div><div style="color:var(--muted);font-size:.7rem;margin-bottom:2px">TARGET</div><div style="font-size:.9rem;font-weight:700">' + (t.target || '—') + '</div></div>' +
+    '<div><div style="color:var(--muted);font-size:.7rem;margin-bottom:2px">THERAPEUTIC AREA</div><div>' + (t.therapeutic_area || t.indication || '—') + '</div></div>' +
+    '<div><div style="color:var(--muted);font-size:.7rem;margin-bottom:2px">MODALITY</div><div>' + (t.modality || '—') + '</div></div>' +
+    '<div><div style="color:var(--muted);font-size:.7rem;margin-bottom:2px">STATUS</div><div>' + (t.status || t.overall_status || '—') + '</div></div>' +
+    '<div><div style="color:var(--muted);font-size:.7rem;margin-bottom:2px">ENROLLMENT</div><div>' + (t.enrollment ? t.enrollment.toLocaleString() + ' participants' : '—') + '</div></div>' +
+    '<div><div style="color:var(--muted);font-size:.7rem;margin-bottom:2px">START DATE</div><div>' + (t.start_date || '—') + '</div></div>' +
+    '<div><div style="color:var(--muted);font-size:.7rem;margin-bottom:2px">COMPLETION</div><div>' + (t.completion_date || t.primary_completion || '—') + '</div></div>' +
+    '</div>' +
+    (t.primary_endpoint ? '<div style="margin-bottom:12px"><div style="color:var(--muted);font-size:.7rem;margin-bottom:4px">PRIMARY ENDPOINT</div><div style="font-size:.85rem;padding:8px;background:rgba(79,142,247,.08);border-radius:6px;border-left:3px solid var(--accent)">' + t.primary_endpoint + '</div></div>' : '') +
+    (t.secondary_endpoints && t.secondary_endpoints.length ? '<div style="margin-bottom:12px"><div style="color:var(--muted);font-size:.7rem;margin-bottom:4px">SECONDARY ENDPOINTS</div><ul style="font-size:.82rem;padding-left:16px;margin:0">' + t.secondary_endpoints.map(ep=>'<li style="margin-bottom:4px">'+ep+'</li>').join('') + '</ul></div>' : '') +
+    (t.brief_summary ? '<div style="margin-bottom:12px"><div style="color:var(--muted);font-size:.7rem;margin-bottom:4px">BRIEF SUMMARY</div><div style="font-size:.82rem;color:#b0b8d0;line-height:1.6">' + t.brief_summary + '</div></div>' : '') +
+    '<div style="margin-bottom:12px"><div style="color:var(--muted);font-size:.7rem;margin-bottom:6px">CONDITIONS</div><div>' + (t.conditions || []).map(c=>'<span class="badge b-neut" style="margin:2px">'+c+'</span>').join('') + '</div></div>' +
+    '<div style="margin-top:16px;padding:10px;background:rgba(255,255,255,.04);border-radius:6px;font-size:.72rem;color:var(--muted)">' +
+    '📁 <strong>Source:</strong> ClinicalTrials.gov API v2 &nbsp;·&nbsp; ' +
+    '<a href="' + (t.source_url || 'https://clinicaltrials.gov/study/' + t.nct_id) + '" target="_blank" style="color:#60A5FA">View on ClinicalTrials.gov →</a>' +
+    '</div>';
+  document.getElementById('modal').classList.add('open');
+}
+function openPaperDetail(p) {
+  const url = p.doi ? 'https://doi.org/' + p.doi : 'https://pubmed.ncbi.nlm.nih.gov/' + p.pmid + '/';
+  document.getElementById('modal-title').textContent = 'PMID ' + p.pmid;
+  document.getElementById('modal-sub').textContent = p.journal + ' · ' + p.pub_date;
+  document.getElementById('modal-body').innerHTML =
+    '<div style="font-size:.95rem;font-weight:600;margin-bottom:12px;line-height:1.5">' + p.title + '</div>' +
+    '<div style="font-size:.8rem;color:var(--muted);margin-bottom:12px">' + p.authors + '</div>' +
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">' +
+    '<div><div style="color:var(--muted);font-size:.7rem;margin-bottom:2px">DRUG / COMPOUND</div><div style="font-weight:700">' + (p.drug_name || '—') + '</div></div>' +
+    '<div><div style="color:var(--muted);font-size:.7rem;margin-bottom:2px">TARGET</div><div style="font-weight:700">' + (p.target_tag || '—') + '</div></div>' +
+    '<div><div style="color:var(--muted);font-size:.7rem;margin-bottom:2px">COMPANY</div><div>' + (p.company || '—') + '</div></div>' +
+    '<div><div style="color:var(--muted);font-size:.7rem;margin-bottom:2px">THERAPEUTIC AREA</div><div>' + (p.therapeutic_area || '—') + '</div></div>' +
+    '</div>' +
+    '<div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">' +
+    '<a href="https://pubmed.ncbi.nlm.nih.gov/' + p.pmid + '/" target="_blank" style="color:#60A5FA;font-size:.85rem">PubMed →</a>' +
+    (p.doi ? '<a href="https://doi.org/' + p.doi + '" target="_blank" style="color:#60A5FA;font-size:.85rem">DOI / Full Text →</a>' : '') +
+    '</div>' +
+    '<div style="margin-top:12px;padding:10px;background:rgba(255,255,255,.04);border-radius:6px;font-size:.72rem;color:var(--muted)">' +
+    '📁 <strong>Source:</strong> PubMed E-utilities NCBI &nbsp;·&nbsp; PMID: ' + p.pmid +
+    '</div>';
+  document.getElementById('modal').classList.add('open');
+}
+
 </script>
 </body>
 </html>
