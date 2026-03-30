@@ -1,0 +1,594 @@
+{
+  "fear_greed": {
+    "score": 38,
+    "rating": "Fear",
+    "prev_close": 36,
+    "prev_1wk": 42,
+    "prev_1mo": 55,
+    "history": []
+  },
+  "vix": {
+    "current": 31.05,
+    "prev": 27.44,
+    "week_ago": 23.51,
+    "change": 3.61,
+    "signal": "Fear"
+  },
+  "crypto": {
+    "BTC": {
+      "price": 67380,
+      "change_24h": 0.85,
+      "change_7d": 0,
+      "market_cap_b": 1348.2
+    },
+    "ETH": {
+      "price": 2043.8,
+      "change_24h": 1.85,
+      "change_7d": 0,
+      "market_cap_b": 246.7
+    },
+    "SOL": {
+      "price": 83.43,
+      "change_24h": 0.69,
+      "change_7d": 0,
+      "market_cap_b": 47.8
+    },
+    "XRP": {
+      "price": 1.36,
+      "change_24h": 1.45,
+      "change_7d": 0,
+      "market_cap_b": 83.2
+    }
+  },
+  "put_call": {
+    "total": 0.92,
+    "equity": 0.68,
+    "index": 1.22,
+    "source": "fallback"
+  },
+  "polymarket": [
+    {
+      "question": "Netanyahu out by March 31?",
+      "volume": 80245459,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.2
+        },
+        {
+          "outcome": "No",
+          "prob": 99.8
+        }
+      ],
+      "end_date": "2026-03-31",
+      "tag": ""
+    },
+    {
+      "question": "Will the Iranian regime fall by March 31?",
+      "volume": 54734206,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.5
+        },
+        {
+          "outcome": "No",
+          "prob": 99.5
+        }
+      ],
+      "end_date": "2026-03-31",
+      "tag": ""
+    },
+    {
+      "question": "Will Jesus Christ return before 2027?",
+      "volume": 52151496,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 3.9
+        },
+        {
+          "outcome": "No",
+          "prob": 96.2
+        }
+      ],
+      "end_date": "2026-12-31",
+      "tag": ""
+    },
+    {
+      "question": "US x Iran ceasefire by March 31?",
+      "volume": 38976263,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 1.8
+        },
+        {
+          "outcome": "No",
+          "prob": 98.2
+        }
+      ],
+      "end_date": "",
+      "tag": ""
+    },
+    {
+      "question": "US forces enter Iran by March 31?",
+      "volume": 35727790,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 6.6
+        },
+        {
+          "outcome": "No",
+          "prob": 93.5
+        }
+      ],
+      "end_date": "2026-03-31",
+      "tag": ""
+    },
+    {
+      "question": "Will Mike Pence win the 2028 Republican presidential nomination?",
+      "volume": 32535790,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.5
+        },
+        {
+          "outcome": "No",
+          "prob": 99.5
+        }
+      ],
+      "end_date": "2028-11-07",
+      "tag": ""
+    },
+    {
+      "question": "Will Tom Brady win the 2028 Republican presidential nomination?",
+      "volume": 28308283,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.8
+        },
+        {
+          "outcome": "No",
+          "prob": 99.2
+        }
+      ],
+      "end_date": "2028-11-07",
+      "tag": ""
+    },
+    {
+      "question": "Will Uzbekistan win the 2026 FIFA World Cup?",
+      "volume": 26482032,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.1
+        },
+        {
+          "outcome": "No",
+          "prob": 99.9
+        }
+      ],
+      "end_date": "2026-07-20",
+      "tag": ""
+    },
+    {
+      "question": "Will Barack Obama win the 2028 Democratic presidential nomination?",
+      "volume": 25656123,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.7
+        },
+        {
+          "outcome": "No",
+          "prob": 99.4
+        }
+      ],
+      "end_date": "2028-11-07",
+      "tag": ""
+    },
+    {
+      "question": "Will Kim Kardashian win the 2028 Republican presidential nomination?",
+      "volume": 23378760,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.7
+        },
+        {
+          "outcome": "No",
+          "prob": 99.4
+        }
+      ],
+      "end_date": "2028-11-07",
+      "tag": ""
+    },
+    {
+      "question": "Will Cura\u00e7ao win the 2026 FIFA World Cup?",
+      "volume": 17725420,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.2
+        },
+        {
+          "outcome": "No",
+          "prob": 99.8
+        }
+      ],
+      "end_date": "2026-07-20",
+      "tag": ""
+    },
+    {
+      "question": "Will Jordan win the 2026 FIFA World Cup?",
+      "volume": 16152153,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.2
+        },
+        {
+          "outcome": "No",
+          "prob": 99.8
+        }
+      ],
+      "end_date": "2026-07-20",
+      "tag": ""
+    },
+    {
+      "question": "Will New Zealand win the 2026 FIFA World Cup?",
+      "volume": 15687577,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.2
+        },
+        {
+          "outcome": "No",
+          "prob": 99.8
+        }
+      ],
+      "end_date": "2026-07-20",
+      "tag": ""
+    },
+    {
+      "question": "Will Crude Oil (CL) hit (HIGH) $100 by end of March?",
+      "volume": 14274244,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 72.8
+        },
+        {
+          "outcome": "No",
+          "prob": 27.2
+        }
+      ],
+      "end_date": "2026-03-31",
+      "tag": ""
+    },
+    {
+      "question": "Trump out as President by March 31?",
+      "volume": 13341335,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.1
+        },
+        {
+          "outcome": "No",
+          "prob": 100.0
+        }
+      ],
+      "end_date": "2026-03-31",
+      "tag": ""
+    },
+    {
+      "question": "Will the Fed decrease interest rates by 50+ bps after the April 2026 meeting?",
+      "volume": 13130334,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.4
+        },
+        {
+          "outcome": "No",
+          "prob": 99.6
+        }
+      ],
+      "end_date": "2026-04-29",
+      "tag": ""
+    },
+    {
+      "question": "Will the Iranian regime fall by April 30?",
+      "volume": 12787672,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 6.5
+        },
+        {
+          "outcome": "No",
+          "prob": 93.5
+        }
+      ],
+      "end_date": "2026-04-30",
+      "tag": ""
+    },
+    {
+      "question": "Will Crude Oil (CL) hit (HIGH) $200 by end of March?",
+      "volume": 11992809,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.1
+        },
+        {
+          "outcome": "No",
+          "prob": 100.0
+        }
+      ],
+      "end_date": "2026-03-31",
+      "tag": ""
+    },
+    {
+      "question": "Will Trump visit China by March 31?",
+      "volume": 10210666,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.1
+        },
+        {
+          "outcome": "No",
+          "prob": 100.0
+        }
+      ],
+      "end_date": "2025-10-31",
+      "tag": ""
+    },
+    {
+      "question": "Will Austria win the 2026 FIFA World Cup?",
+      "volume": 10016291,
+      "volume_24h": 0,
+      "prices": [
+        {
+          "outcome": "Yes",
+          "prob": 0.5
+        },
+        {
+          "outcome": "No",
+          "prob": 99.5
+        }
+      ],
+      "end_date": "2026-07-20",
+      "tag": ""
+    }
+  ],
+  "insider_trades": [
+    {
+      "company": "Ho Kin Wai",
+      "cik": "0002117348",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/2117348/000121390026035873/0001213900-26-035873-index.htm"
+    },
+    {
+      "company": "Primech Holdings Ltd",
+      "cik": "0001891944",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1891944/000121390026035873/0001213900-26-035873-index.htm"
+    },
+    {
+      "company": "Nath Kabir",
+      "cik": "0001940258",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1940258/000194025826000009/0001940258-26-000009-index.htm"
+    },
+    {
+      "company": "COMPASS Pathways plc",
+      "cik": "0001816590",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1816590/000194025826000009/0001940258-26-000009-index.htm"
+    },
+    {
+      "company": "Vincent Ron",
+      "cik": "0001550497",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1550497/000165495426002907/0001654954-26-002907-index.htm"
+    },
+    {
+      "company": "Crexendo, Inc.",
+      "cik": "0001075736",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1075736/000165495426002907/0001654954-26-002907-index.htm"
+    },
+    {
+      "company": "Gaylor Douglas Walter",
+      "cik": "0001550317",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1550317/000165495426002905/0001654954-26-002905-index.htm"
+    },
+    {
+      "company": "Crexendo, Inc.",
+      "cik": "0001075736",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1075736/000165495426002905/0001654954-26-002905-index.htm"
+    },
+    {
+      "company": "KORN JEFFREY G",
+      "cik": "0001282348",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1282348/000165495426002903/0001654954-26-002903-index.htm"
+    },
+    {
+      "company": "Crexendo, Inc.",
+      "cik": "0001075736",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1075736/000165495426002903/0001654954-26-002903-index.htm"
+    },
+    {
+      "company": "Goodwin Guy",
+      "cik": "0001898328",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1898328/000189832826000002/0001898328-26-000002-index.htm"
+    },
+    {
+      "company": "COMPASS Pathways plc",
+      "cik": "0001816590",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1816590/000189832826000002/0001898328-26-000002-index.htm"
+    },
+    {
+      "company": "Loxam Teri",
+      "cik": "0001829111",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1829111/000182911126000007/0001829111-26-000007-index.htm"
+    },
+    {
+      "company": "COMPASS Pathways plc",
+      "cik": "0001816590",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/1816590/000182911126000007/0001829111-26-000007-index.htm"
+    },
+    {
+      "company": "Crawford Amanda",
+      "cik": "0002030797",
+      "filed": "2026-03-27",
+      "url": "https://www.sec.gov/Archives/edgar/data/2030797/000203079726000001/0002030797-26-000001-index.htm"
+    }
+  ],
+  "headlines": [
+    {
+      "title": "IWM vs. QQQ: How Small-Cap Diversification Compares to Large-Cap Growth for Investors",
+      "link": "https://www.fool.com/coverage/etfs/2026/03/29/iwm-vs-qqq-how-small-cap-diversification-compares-to-large-cap-growth-for-investors/?.tsrc=rss",
+      "pub": "Sun, 29 Mar 2026 20:43:19",
+      "source": "Yahoo"
+    },
+    {
+      "title": "Why Conservative Investors Are Turning to AOK With VIX at the 93rd Percentile",
+      "link": "https://247wallst.com/investing/2026/03/29/why-conservative-investors-are-turning-to-aok-with-vix-at-the-93rd-percentile/?.tsrc=rss",
+      "pub": "Sun, 29 Mar 2026 14:30:08",
+      "source": "Yahoo"
+    },
+    {
+      "title": "AOR Has Returned 113.6% Over 10 Years With Built-In Rebalancing and a 2.6% Yield",
+      "link": "https://247wallst.com/investing/2026/03/29/aor-has-returned-113-6-over-10-years-with-built-in-rebalancing-and-a-2-6-yield/?.tsrc=rss",
+      "pub": "Sun, 29 Mar 2026 12:00:58",
+      "source": "Yahoo"
+    },
+    {
+      "title": "SPY Has Returned 217% Over 10 Years, But Its Top 3 Holdings Now Control the Outcome",
+      "link": "https://247wallst.com/investing/2026/03/28/spy-has-returned-217-over-10-years-but-its-top-3-holdings-now-control-the-outcome/?.tsrc=rss",
+      "pub": "Sat, 28 Mar 2026 15:00:27",
+      "source": "Yahoo"
+    },
+    {
+      "title": "RSPA\u2019s 8.9% Yield Hides a Tax Problem Most Income Investors Never See Coming",
+      "link": "https://247wallst.com/investing/2026/03/28/rspas-8-9-yield-hides-a-tax-problem-most-income-investors-never-see-coming/?.tsrc=rss",
+      "pub": "Sat, 28 Mar 2026 10:48:40",
+      "source": "Yahoo"
+    },
+    {
+      "title": "Almost everything is going wrong for markets right now",
+      "link": "https://finance.yahoo.com/news/almost-everything-is-going-wrong-for-markets-right-now-100005327.html?.tsrc=rss",
+      "pub": "Sat, 28 Mar 2026 10:00:05",
+      "source": "Yahoo"
+    },
+    {
+      "title": "The Stock Market\u2019s Bottom Is Closer Than You Think",
+      "link": "https://finance.yahoo.com/m/4831894e-54bb-3035-892d-fa0d64c26e96/the-stock-market%E2%80%99s-bottom-is.html?.tsrc=rss",
+      "pub": "Fri, 27 Mar 2026 20:31:00",
+      "source": "Yahoo"
+    },
+    {
+      "title": "Nasdaq 100 Enters Correction, Falls 11% as Big Tech Slides",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-100-enters-correction-falls-195640896.html?.tsrc=rss",
+      "pub": "Fri, 27 Mar 2026 19:56:40",
+      "source": "Yahoo"
+    }
+  ],
+  "buffett": {
+    "total_market_cap_t": 44.0,
+    "gdp_t": 29.35,
+    "ratio_pct": 149.9,
+    "valuation": "Significantly Overvalued",
+    "debt_t": 36.5,
+    "debt_gdp_pct": 124.4,
+    "as_of": "2026-03-30"
+  },
+  "earnings": [
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "date": "2026-04-01",
+      "est_eps": 2.58,
+      "sector": "Healthcare"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "date": "2026-04-03",
+      "est_eps": 1.91,
+      "sector": "Pharma"
+    },
+    {
+      "ticker": "PFE",
+      "name": "Pfizer",
+      "date": "2026-04-06",
+      "est_eps": 0.45,
+      "sector": "Pharma"
+    },
+    {
+      "ticker": "ABBV",
+      "name": "AbbVie",
+      "date": "2026-04-08",
+      "est_eps": 2.32,
+      "sector": "Pharma"
+    },
+    {
+      "ticker": "BMY",
+      "name": "Bristol-Myers",
+      "date": "2026-04-10",
+      "est_eps": 1.65,
+      "sector": "Pharma"
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen",
+      "date": "2026-04-12",
+      "est_eps": 4.82,
+      "sector": "Biotech"
+    },
+    {
+      "ticker": "GILD",
+      "name": "Gilead",
+      "date": "2026-04-14",
+      "est_eps": 1.44,
+      "sector": "Biotech"
+    }
+  ],
+  "generated": "2026-03-30T04:22:36.715964"
+}
