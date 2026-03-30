@@ -1,0 +1,581 @@
+{
+  "count": 64,
+  "filings": [
+    {
+      "company": "BioNTech SE",
+      "ticker": "BNTX",
+      "form": "20-F",
+      "filed_date": "2026-03-10",
+      "description": "bntx-20251231.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000017/bntx-20251231.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Moderna, Inc.",
+      "ticker": "MRNA",
+      "form": "8-K",
+      "filed_date": "2026-03-05",
+      "description": "mrna-20260303.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000047/mrna-20260303.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "AbbVie Inc.",
+      "ticker": "ABBV",
+      "form": "8-K",
+      "filed_date": "2026-03-04",
+      "description": "tm266774d4_8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926023534/tm266774d4_8k.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "ALNYLAM PHARMACEUTICALS, INC.",
+      "ticker": "ALNY",
+      "form": "8-K",
+      "filed_date": "2026-03-04",
+      "description": "alny-20260302.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1178670/000162828026014728/alny-20260302.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "PFIZER INC",
+      "ticker": "PFE",
+      "form": "10-K",
+      "filed_date": "2026-02-26",
+      "description": "pfe-20251231.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "AbbVie Inc.",
+      "ticker": "ABBV",
+      "form": "8-K",
+      "filed_date": "2026-02-26",
+      "description": "tm266774d4_8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926020643/tm266774d4_8k.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "GILEAD SCIENCES, INC.",
+      "ticker": "GILD",
+      "form": "10-K",
+      "filed_date": "2026-02-24",
+      "description": "gild-20251231.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000006/gild-20251231.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "GILEAD SCIENCES, INC.",
+      "ticker": "GILD",
+      "form": "8-K",
+      "filed_date": "2026-02-23",
+      "description": "tm267044d1_8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465926018314/tm267044d1_8k.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Moderna, Inc.",
+      "ticker": "MRNA",
+      "form": "10-K",
+      "filed_date": "2026-02-20",
+      "description": "mrna-20251231.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000033/mrna-20251231.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "AbbVie Inc.",
+      "ticker": "ABBV",
+      "form": "10-K",
+      "filed_date": "2026-02-20",
+      "description": "abbv-20251231.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000008/abbv-20251231.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Moderna, Inc.",
+      "ticker": "MRNA",
+      "form": "8-K",
+      "filed_date": "2026-02-13",
+      "description": "mrna-20260213.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000015/mrna-20260213.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "ticker": "BIIB",
+      "form": "10-K",
+      "filed_date": "2026-02-13",
+      "description": "vrtx-20251231.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/875320/000087532026000056/vrtx-20251231.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "ticker": "BIIB",
+      "form": "8-K",
+      "filed_date": "2026-02-12",
+      "description": "vrtx-20260212.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/875320/000087532026000034/vrtx-20260212.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "ALNYLAM PHARMACEUTICALS, INC.",
+      "ticker": "ALNY",
+      "form": "10-K",
+      "filed_date": "2026-02-12",
+      "description": "alny-20251231.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1178670/000162828026007497/alny-20251231.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "ALNYLAM PHARMACEUTICALS, INC.",
+      "ticker": "ALNY",
+      "form": "8-K",
+      "filed_date": "2026-02-12",
+      "description": "alny-20260212.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1178670/000162828026007491/alny-20260212.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Moderna, Inc.",
+      "ticker": "MRNA",
+      "form": "8-K",
+      "filed_date": "2026-02-11",
+      "description": "mrna-20260203.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000012/mrna-20260203.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "BRISTOL MYERS SQUIBB CO",
+      "ticker": "BMY",
+      "form": "10-K",
+      "filed_date": "2026-02-11",
+      "description": "bmy-20251231.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000004/bmy-20251231.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "GILEAD SCIENCES, INC.",
+      "ticker": "GILD",
+      "form": "8-K",
+      "filed_date": "2026-02-10",
+      "description": "gild-20260210.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000003/gild-20260210.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "BRISTOL MYERS SQUIBB CO",
+      "ticker": "BMY",
+      "form": "8-K",
+      "filed_date": "2026-02-05",
+      "description": "bmy-20260205.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000002/bmy-20260205.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "REGENERON PHARMACEUTICALS, INC.",
+      "ticker": "REGN",
+      "form": "10-K",
+      "filed_date": "2026-02-04",
+      "description": "regn-20251231.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000008/regn-20251231.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "AbbVie Inc.",
+      "ticker": "ABBV",
+      "form": "8-K",
+      "filed_date": "2026-02-04",
+      "description": "abbv-20260204.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000004/abbv-20260204.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "PFIZER INC",
+      "ticker": "PFE",
+      "form": "8-K",
+      "filed_date": "2026-02-03",
+      "description": "pfe-20260203.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000005/pfe-20260203.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "REGENERON PHARMACEUTICALS, INC.",
+      "ticker": "REGN",
+      "form": "8-K",
+      "filed_date": "2026-01-30",
+      "description": "regn-20260130.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000004/regn-20260130.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Moderna, Inc.",
+      "ticker": "MRNA",
+      "form": "8-K",
+      "filed_date": "2026-01-12",
+      "description": "mrna-20260112.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000007/mrna-20260112.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "REGENERON PHARMACEUTICALS, INC.",
+      "ticker": "REGN",
+      "form": "8-K",
+      "filed_date": "2026-01-12",
+      "description": "tm262861d1_8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/872589/000110465926002691/tm262861d1_8k.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "BRISTOL MYERS SQUIBB CO",
+      "ticker": "BMY",
+      "form": "8-K",
+      "filed_date": "2026-01-12",
+      "description": "ef20062582_8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/14272/000114036126000929/ef20062582_8k.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "ALNYLAM PHARMACEUTICALS, INC.",
+      "ticker": "ALNY",
+      "form": "8-K",
+      "filed_date": "2026-01-12",
+      "description": "alny-20260111.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1178670/000162828026001755/alny-20260111.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "AbbVie Inc.",
+      "ticker": "ABBV",
+      "form": "8-K",
+      "filed_date": "2026-01-07",
+      "description": "abbv-20260107.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000002/abbv-20260107.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "PFIZER INC",
+      "ticker": "PFE",
+      "form": "8-K",
+      "filed_date": "2025-12-16",
+      "description": "pfe-20251216.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000167/pfe-20251216.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "ALNYLAM PHARMACEUTICALS, INC.",
+      "ticker": "ALNY",
+      "form": "8-K",
+      "filed_date": "2025-12-11",
+      "description": "d201569d8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1178670/000119312525315047/d201569d8k.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "PFIZER INC",
+      "ticker": "PFE",
+      "form": "8-K",
+      "filed_date": "2025-11-21",
+      "description": "d80089d8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312525291406/d80089d8k.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "GILEAD SCIENCES, INC.",
+      "ticker": "GILD",
+      "form": "8-K",
+      "filed_date": "2025-11-19",
+      "description": "tm2531634d1_8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465925113968/tm2531634d1_8k.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "BRISTOL MYERS SQUIBB CO",
+      "ticker": "BMY",
+      "form": "8-K",
+      "filed_date": "2025-11-18",
+      "description": "ef20059419_8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/14272/000114036125042607/ef20059419_8k.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-11-13",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "PFIZER INC",
+      "ticker": "PFE",
+      "form": "8-K",
+      "filed_date": "2025-11-13",
+      "description": "pfe-20251113.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000159/pfe-20251113.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-11-12",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "BRISTOL MYERS SQUIBB CO",
+      "ticker": "BMY",
+      "form": "8-K",
+      "filed_date": "2025-11-10",
+      "description": "ny20057651x6_8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/14272/000114036125041380/ny20057651x6_8k.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "ticker": "BIIB",
+      "form": "8-K",
+      "filed_date": "2025-11-03",
+      "description": "vrtx-20251103.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/875320/000087532025000230/vrtx-20251103.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "GILEAD SCIENCES, INC.",
+      "ticker": "GILD",
+      "form": "8-K",
+      "filed_date": "2025-10-30",
+      "description": "gild-20251030.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000044/gild-20251030.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "REGENERON PHARMACEUTICALS, INC.",
+      "ticker": "REGN",
+      "form": "8-K",
+      "filed_date": "2025-10-28",
+      "description": "regn-20251028.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/872589/000087258925000026/regn-20251028.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-10-20",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "REGENERON PHARMACEUTICALS, INC.",
+      "ticker": "REGN",
+      "form": "8-K",
+      "filed_date": "2025-10-06",
+      "description": "tm2528010d1_8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/872589/000110465925096921/tm2528010d1_8k.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-08-13",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-08-11",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "ticker": "BIIB",
+      "form": "8-K",
+      "filed_date": "2025-08-04",
+      "description": "vrtx-20250804.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/875320/000087532025000213/vrtx-20250804.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-07-28",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-05-23",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-05-22",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "ticker": "BIIB",
+      "form": "8-K",
+      "filed_date": "2025-05-19",
+      "description": "vrtx-20250519.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/875320/000087532025000199/vrtx-20250519.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-05-13",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-05-08",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-04-23",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-03-24",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-03-18",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-03-17",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "BioNTech SE",
+      "ticker": "BNTX",
+      "form": "20-F",
+      "filed_date": "2025-03-10",
+      "description": "bntx-20241231.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698525000013/bntx-20241231.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-03-06",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-03-04",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-02-28",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-02-20",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-02-11",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-01-13",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    },
+    {
+      "company": "APACHE CORP",
+      "ticker": "AMGN",
+      "form": "8-K",
+      "filed_date": "2025-01-13",
+      "description": "d915603d8k.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/6769/000119312525005391/d915603d8k.htm",
+      "is_clinical": false
+    },
+    {
+      "company": "Unknown",
+      "ticker": "",
+      "form": "8-K",
+      "filed_date": "2025-01-10",
+      "description": "",
+      "url": "https://www.sec.gov/Archives/edgar/data//",
+      "is_clinical": true
+    }
+  ]
+}
