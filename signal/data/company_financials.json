@@ -1,0 +1,2065 @@
+{
+  "LLY": {
+    "ticker": "LLY",
+    "name": "ELI LILLY AND COMPANY",
+    "cik": "0000059478",
+    "fetched": "2026-03-30",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "income_stmt": [
+      {
+        "year": "2022",
+        "revenue_b": 28.541,
+        "gross_profit_b": null,
+        "rd_expense_b": 7.191,
+        "sga_b": 6.44,
+        "operating_income_b": null,
+        "net_income_b": 6.245,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 21.9,
+        "rd_pct": 25.2
+      },
+      {
+        "year": "2023",
+        "revenue_b": 34.124,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 7.404,
+        "operating_income_b": null,
+        "net_income_b": 5.24,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 15.4,
+        "rd_pct": null
+      },
+      {
+        "year": "2024",
+        "revenue_b": 45.043,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 8.594,
+        "operating_income_b": null,
+        "net_income_b": 10.59,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 23.5,
+        "rd_pct": null
+      },
+      {
+        "year": "2025",
+        "revenue_b": 65.179,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 11.094,
+        "operating_income_b": null,
+        "net_income_b": 20.64,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 31.7,
+        "rd_pct": null
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2022",
+        "cash_b": 2.067,
+        "total_assets_b": 49.49,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 10.65,
+        "lt_debt_b": 14.815,
+        "retained_earnings_b": 10.043
+      },
+      {
+        "year": "2023",
+        "cash_b": 2.819,
+        "total_assets_b": 64.006,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 10.772,
+        "lt_debt_b": 19.105,
+        "retained_earnings_b": 10.312
+      },
+      {
+        "year": "2024",
+        "cash_b": 3.268,
+        "total_assets_b": 78.715,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 14.272,
+        "lt_debt_b": 29.474,
+        "retained_earnings_b": 13.545
+      },
+      {
+        "year": "2025",
+        "cash_b": 7.268,
+        "total_assets_b": 112.476,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 26.535,
+        "lt_debt_b": null,
+        "retained_earnings_b": 24.47
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2022",
+        "operating_cf_b": 7.586,
+        "investing_cf_b": -3.763,
+        "financing_cf_b": -5.407,
+        "capex_b": null,
+        "fcf_b": null
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": 4.24,
+        "investing_cf_b": -7.153,
+        "financing_cf_b": 3.496,
+        "capex_b": null,
+        "fcf_b": null
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": 8.818,
+        "investing_cf_b": -9.302,
+        "financing_cf_b": 1.23,
+        "capex_b": null,
+        "fcf_b": null
+      },
+      {
+        "year": "2025",
+        "operating_cf_b": 16.813,
+        "investing_cf_b": -10.972,
+        "financing_cf_b": -2.213,
+        "capex_b": null,
+        "fcf_b": null
+      }
+    ],
+    "revenue_b_latest": 65.179,
+    "net_income_b_latest": 20.64,
+    "rd_b_latest": null,
+    "net_margin_latest": 31.7,
+    "rd_pct_latest": null,
+    "gross_margin_latest": null,
+    "fcf_b_latest": null,
+    "cash_b_latest": 7.268,
+    "debt_b_latest": null
+  },
+  "ABBV": {
+    "ticker": "ABBV",
+    "name": "ABBVIE INC.",
+    "cik": "0001551152",
+    "fetched": "2026-03-30",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "income_stmt": [
+      {
+        "year": "2022",
+        "revenue_b": 58.054,
+        "gross_profit_b": 10.951,
+        "rd_expense_b": null,
+        "sga_b": 15.26,
+        "operating_income_b": 18.117,
+        "net_income_b": 11.836,
+        "gross_margin": 18.9,
+        "operating_margin": 31.2,
+        "net_margin": 20.4,
+        "rd_pct": null
+      },
+      {
+        "year": "2023",
+        "revenue_b": 54.318,
+        "gross_profit_b": 8.597,
+        "rd_expense_b": null,
+        "sga_b": 12.872,
+        "operating_income_b": 12.757,
+        "net_income_b": 4.863,
+        "gross_margin": 15.8,
+        "operating_margin": 23.5,
+        "net_margin": 9.0,
+        "rd_pct": null
+      },
+      {
+        "year": "2024",
+        "revenue_b": 56.334,
+        "gross_profit_b": 10.706,
+        "rd_expense_b": null,
+        "sga_b": 14.752,
+        "operating_income_b": 9.137,
+        "net_income_b": 4.278,
+        "gross_margin": 19.0,
+        "operating_margin": 16.2,
+        "net_margin": 7.6,
+        "rd_pct": null
+      },
+      {
+        "year": "2025",
+        "revenue_b": 61.16,
+        "gross_profit_b": 12.066,
+        "rd_expense_b": null,
+        "sga_b": 14.01,
+        "operating_income_b": 15.075,
+        "net_income_b": 4.226,
+        "gross_margin": 19.7,
+        "operating_margin": 24.6,
+        "net_margin": 6.9,
+        "rd_pct": null
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2022",
+        "cash_b": 9.201,
+        "total_assets_b": 138.805,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 17.254,
+        "lt_debt_b": 63.128,
+        "retained_earnings_b": 4.784
+      },
+      {
+        "year": "2023",
+        "cash_b": 12.814,
+        "total_assets_b": 134.711,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 10.36,
+        "lt_debt_b": 59.245,
+        "retained_earnings_b": -1.0
+      },
+      {
+        "year": "2024",
+        "cash_b": 5.524,
+        "total_assets_b": 135.161,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 3.325,
+        "lt_debt_b": 66.841,
+        "retained_earnings_b": -7.9
+      },
+      {
+        "year": "2025",
+        "cash_b": 5.229,
+        "total_assets_b": 133.96,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": -3.27,
+        "lt_debt_b": 64.503,
+        "retained_earnings_b": -15.493
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2022",
+        "operating_cf_b": 24.943,
+        "investing_cf_b": -0.623,
+        "financing_cf_b": -24.803,
+        "capex_b": 0.695,
+        "fcf_b": 25.638
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": 22.839,
+        "investing_cf_b": -2.009,
+        "financing_cf_b": -17.222,
+        "capex_b": 0.777,
+        "fcf_b": 23.616
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": 18.806,
+        "investing_cf_b": -20.82,
+        "financing_cf_b": -5.211,
+        "capex_b": 0.974,
+        "fcf_b": 19.78
+      },
+      {
+        "year": "2025",
+        "operating_cf_b": 19.03,
+        "investing_cf_b": -6.643,
+        "financing_cf_b": -12.724,
+        "capex_b": 1.214,
+        "fcf_b": 20.244
+      }
+    ],
+    "revenue_b_latest": 61.16,
+    "net_income_b_latest": 4.226,
+    "rd_b_latest": null,
+    "net_margin_latest": 6.9,
+    "rd_pct_latest": null,
+    "gross_margin_latest": 19.7,
+    "fcf_b_latest": 20.244,
+    "cash_b_latest": 5.229,
+    "debt_b_latest": 64.503
+  },
+  "REGN": {
+    "ticker": "REGN",
+    "name": "REGENERON PHARMACEUTICALS, INC.",
+    "cik": "0000872589",
+    "fetched": "2026-03-30",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "income_stmt": [
+      {
+        "year": "2022",
+        "revenue_b": 12.173,
+        "gross_profit_b": null,
+        "rd_expense_b": 3.592,
+        "sga_b": 2.116,
+        "operating_income_b": 4.739,
+        "net_income_b": 4.338,
+        "gross_margin": null,
+        "operating_margin": 38.9,
+        "net_margin": 35.6,
+        "rd_pct": 29.5
+      },
+      {
+        "year": "2023",
+        "revenue_b": 13.117,
+        "gross_profit_b": null,
+        "rd_expense_b": 4.439,
+        "sga_b": 2.631,
+        "operating_income_b": 4.047,
+        "net_income_b": 3.954,
+        "gross_margin": null,
+        "operating_margin": 30.9,
+        "net_margin": 30.1,
+        "rd_pct": 33.8
+      },
+      {
+        "year": "2024",
+        "revenue_b": 14.202,
+        "gross_profit_b": null,
+        "rd_expense_b": 5.132,
+        "sga_b": 2.954,
+        "operating_income_b": 3.991,
+        "net_income_b": 4.413,
+        "gross_margin": null,
+        "operating_margin": 28.1,
+        "net_margin": 31.1,
+        "rd_pct": 36.1
+      },
+      {
+        "year": "2025",
+        "revenue_b": 14.343,
+        "gross_profit_b": null,
+        "rd_expense_b": 5.85,
+        "sga_b": 2.7,
+        "operating_income_b": 3.578,
+        "net_income_b": 4.505,
+        "gross_margin": null,
+        "operating_margin": 24.9,
+        "net_margin": 31.4,
+        "rd_pct": 40.8
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2022",
+        "cash_b": 3.106,
+        "total_assets_b": 29.215,
+        "total_liabilities_b": 6.551,
+        "stockholders_equity_b": 22.664,
+        "lt_debt_b": null,
+        "retained_earnings_b": 23.307
+      },
+      {
+        "year": "2023",
+        "cash_b": 2.73,
+        "total_assets_b": 33.08,
+        "total_liabilities_b": 7.107,
+        "stockholders_equity_b": 25.973,
+        "lt_debt_b": null,
+        "retained_earnings_b": 27.26
+      },
+      {
+        "year": "2024",
+        "cash_b": 2.488,
+        "total_assets_b": 37.759,
+        "total_liabilities_b": 8.406,
+        "stockholders_equity_b": 29.354,
+        "lt_debt_b": null,
+        "retained_earnings_b": 31.673
+      },
+      {
+        "year": "2025",
+        "cash_b": 3.118,
+        "total_assets_b": 40.559,
+        "total_liabilities_b": 9.302,
+        "stockholders_equity_b": 31.257,
+        "lt_debt_b": null,
+        "retained_earnings_b": 35.797
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2022",
+        "operating_cf_b": 5.015,
+        "investing_cf_b": -3.785,
+        "financing_cf_b": -1.009,
+        "capex_b": null,
+        "fcf_b": null
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": 4.594,
+        "investing_cf_b": -3.185,
+        "financing_cf_b": -1.79,
+        "capex_b": null,
+        "fcf_b": null
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": 4.42,
+        "investing_cf_b": -2.468,
+        "financing_cf_b": -2.2,
+        "capex_b": null,
+        "fcf_b": null
+      },
+      {
+        "year": "2025",
+        "operating_cf_b": 4.979,
+        "investing_cf_b": -0.629,
+        "financing_cf_b": -3.715,
+        "capex_b": null,
+        "fcf_b": null
+      }
+    ],
+    "revenue_b_latest": 14.343,
+    "net_income_b_latest": 4.505,
+    "rd_b_latest": 5.85,
+    "net_margin_latest": 31.4,
+    "rd_pct_latest": 40.8,
+    "gross_margin_latest": null,
+    "fcf_b_latest": null,
+    "cash_b_latest": 3.118,
+    "debt_b_latest": null
+  },
+  "VRTX": {
+    "ticker": "VRTX",
+    "name": "VERTEX PHARMACEUTICALS INC / MA",
+    "cik": "0000875320",
+    "fetched": "2026-03-30",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "income_stmt": [
+      {
+        "year": "2022",
+        "revenue_b": 8.931,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 0.945,
+        "operating_income_b": 4.307,
+        "net_income_b": 3.322,
+        "gross_margin": null,
+        "operating_margin": 48.2,
+        "net_margin": 37.2,
+        "rd_pct": null
+      },
+      {
+        "year": "2023",
+        "revenue_b": 9.869,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 1.137,
+        "operating_income_b": 3.832,
+        "net_income_b": 3.62,
+        "gross_margin": null,
+        "operating_margin": 38.8,
+        "net_margin": 36.7,
+        "rd_pct": null
+      },
+      {
+        "year": "2024",
+        "revenue_b": 11.02,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 1.464,
+        "operating_income_b": -0.233,
+        "net_income_b": -0.536,
+        "gross_margin": null,
+        "operating_margin": -2.1,
+        "net_margin": -4.9,
+        "rd_pct": null
+      },
+      {
+        "year": "2025",
+        "revenue_b": 12.001,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 1.753,
+        "operating_income_b": 4.173,
+        "net_income_b": 3.953,
+        "gross_margin": null,
+        "operating_margin": 34.8,
+        "net_margin": 32.9,
+        "rd_pct": null
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2022",
+        "cash_b": 10.504,
+        "total_assets_b": 18.151,
+        "total_liabilities_b": 4.238,
+        "stockholders_equity_b": 13.913,
+        "lt_debt_b": null,
+        "retained_earnings_b": 6.523
+      },
+      {
+        "year": "2023",
+        "cash_b": 10.369,
+        "total_assets_b": 22.73,
+        "total_liabilities_b": 5.15,
+        "stockholders_equity_b": 17.58,
+        "lt_debt_b": null,
+        "retained_earnings_b": 10.142
+      },
+      {
+        "year": "2024",
+        "cash_b": 4.57,
+        "total_assets_b": 22.533,
+        "total_liabilities_b": 6.124,
+        "stockholders_equity_b": 16.41,
+        "lt_debt_b": null,
+        "retained_earnings_b": 9.607
+      },
+      {
+        "year": "2025",
+        "cash_b": 5.085,
+        "total_assets_b": 25.643,
+        "total_liabilities_b": 6.977,
+        "stockholders_equity_b": 18.666,
+        "lt_debt_b": null,
+        "retained_earnings_b": 13.56
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2022",
+        "operating_cf_b": 4.13,
+        "investing_cf_b": -0.321,
+        "financing_cf_b": -0.068,
+        "capex_b": 0.205,
+        "fcf_b": 4.335
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": 3.537,
+        "investing_cf_b": -3.142,
+        "financing_cf_b": -0.562,
+        "capex_b": 0.2,
+        "fcf_b": 3.737
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": -0.493,
+        "investing_cf_b": -3.77,
+        "financing_cf_b": -1.495,
+        "capex_b": 0.298,
+        "fcf_b": -0.195
+      },
+      {
+        "year": "2025",
+        "operating_cf_b": 3.631,
+        "investing_cf_b": -0.945,
+        "financing_cf_b": -2.261,
+        "capex_b": 0.438,
+        "fcf_b": 4.069
+      }
+    ],
+    "revenue_b_latest": 12.001,
+    "net_income_b_latest": 3.953,
+    "rd_b_latest": null,
+    "net_margin_latest": 32.9,
+    "rd_pct_latest": null,
+    "gross_margin_latest": null,
+    "fcf_b_latest": 4.069,
+    "cash_b_latest": 5.085,
+    "debt_b_latest": null
+  },
+  "AMGN": {
+    "ticker": "AMGN",
+    "name": "APACHE CORP",
+    "cik": "0000006769",
+    "fetched": "2026-03-30",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    "income_stmt": [
+      {
+        "year": "2020",
+        "revenue_b": 4.308,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": null,
+        "operating_income_b": -4.102,
+        "net_income_b": -4.86,
+        "gross_margin": null,
+        "operating_margin": -95.2,
+        "net_margin": -112.8,
+        "rd_pct": null
+      },
+      {
+        "year": "2021",
+        "revenue_b": null,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": null,
+        "operating_income_b": 2.888,
+        "net_income_b": 1.062,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": null,
+        "rd_pct": null
+      },
+      {
+        "year": "2022",
+        "revenue_b": null,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": null,
+        "operating_income_b": 5.62,
+        "net_income_b": 3.536,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": null,
+        "rd_pct": null
+      },
+      {
+        "year": "2023",
+        "revenue_b": null,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": null,
+        "operating_income_b": 3.599,
+        "net_income_b": 2.526,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": null,
+        "rd_pct": null
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2020",
+        "cash_b": 0.262,
+        "total_assets_b": 12.746,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": -1.639,
+        "lt_debt_b": 8.772,
+        "retained_earnings_b": -10.461
+      },
+      {
+        "year": "2021",
+        "cash_b": 0.279,
+        "total_assets_b": 14.393,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": -0.618,
+        "lt_debt_b": 7.51,
+        "retained_earnings_b": -9.317
+      },
+      {
+        "year": "2022",
+        "cash_b": 0.185,
+        "total_assets_b": 14.255,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 2.258,
+        "lt_debt_b": 4.887,
+        "retained_earnings_b": -5.781
+      },
+      {
+        "year": "2023",
+        "cash_b": 0.084,
+        "total_assets_b": 16.944,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 4.732,
+        "lt_debt_b": null,
+        "retained_earnings_b": -3.255
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2020",
+        "operating_cf_b": 1.388,
+        "investing_cf_b": -1.466,
+        "financing_cf_b": 0.093,
+        "capex_b": null,
+        "fcf_b": null
+      },
+      {
+        "year": "2021",
+        "operating_cf_b": 3.505,
+        "investing_cf_b": -0.666,
+        "financing_cf_b": -2.822,
+        "capex_b": null,
+        "fcf_b": null
+      },
+      {
+        "year": "2022",
+        "operating_cf_b": 4.852,
+        "investing_cf_b": -1.485,
+        "financing_cf_b": -3.461,
+        "capex_b": null,
+        "fcf_b": null
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": 2.929,
+        "investing_cf_b": -2.412,
+        "financing_cf_b": -0.618,
+        "capex_b": null,
+        "fcf_b": null
+      }
+    ],
+    "revenue_b_latest": null,
+    "net_income_b_latest": 2.526,
+    "rd_b_latest": null,
+    "net_margin_latest": null,
+    "rd_pct_latest": null,
+    "gross_margin_latest": null,
+    "fcf_b_latest": null,
+    "cash_b_latest": 0.084,
+    "debt_b_latest": null
+  },
+  "GILD": {
+    "ticker": "GILD",
+    "name": "GILEAD SCIENCES, INC.",
+    "cik": "0000882095",
+    "fetched": "2026-03-30",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "income_stmt": [
+      {
+        "year": "2022",
+        "revenue_b": 27.281,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 5.673,
+        "operating_income_b": 7.33,
+        "net_income_b": 4.592,
+        "gross_margin": null,
+        "operating_margin": 26.9,
+        "net_margin": 16.8,
+        "rd_pct": null
+      },
+      {
+        "year": "2023",
+        "revenue_b": 27.116,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 6.09,
+        "operating_income_b": 7.605,
+        "net_income_b": 5.665,
+        "gross_margin": null,
+        "operating_margin": 28.0,
+        "net_margin": 20.9,
+        "rd_pct": null
+      },
+      {
+        "year": "2024",
+        "revenue_b": 28.754,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 6.091,
+        "operating_income_b": 1.662,
+        "net_income_b": 0.48,
+        "gross_margin": null,
+        "operating_margin": 5.8,
+        "net_margin": 1.7,
+        "rd_pct": null
+      },
+      {
+        "year": "2025",
+        "revenue_b": 29.443,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 5.774,
+        "operating_income_b": 10.022,
+        "net_income_b": 8.51,
+        "gross_margin": null,
+        "operating_margin": 34.0,
+        "net_margin": 28.9,
+        "rd_pct": null
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2022",
+        "cash_b": 5.412,
+        "total_assets_b": 63.171,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 21.24,
+        "lt_debt_b": 25.229,
+        "retained_earnings_b": 15.687
+      },
+      {
+        "year": "2023",
+        "cash_b": null,
+        "total_assets_b": 62.125,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 22.833,
+        "lt_debt_b": 24.987,
+        "retained_earnings_b": 16.304
+      },
+      {
+        "year": "2024",
+        "cash_b": null,
+        "total_assets_b": 58.995,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 19.33,
+        "lt_debt_b": 26.71,
+        "retained_earnings_b": 11.497
+      },
+      {
+        "year": "2025",
+        "cash_b": null,
+        "total_assets_b": 59.023,
+        "total_liabilities_b": null,
+        "stockholders_equity_b": 22.703,
+        "lt_debt_b": 24.937,
+        "retained_earnings_b": 13.73
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2022",
+        "operating_cf_b": 9.072,
+        "investing_cf_b": -2.466,
+        "financing_cf_b": -6.469,
+        "capex_b": 0.728,
+        "fcf_b": 9.8
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": 8.006,
+        "investing_cf_b": -2.265,
+        "financing_cf_b": -5.125,
+        "capex_b": 0.585,
+        "fcf_b": 8.591
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": 10.828,
+        "investing_cf_b": -3.449,
+        "financing_cf_b": -3.433,
+        "capex_b": 0.523,
+        "fcf_b": 11.351
+      },
+      {
+        "year": "2025",
+        "operating_cf_b": 10.019,
+        "investing_cf_b": -4.793,
+        "financing_cf_b": -7.745,
+        "capex_b": 0.563,
+        "fcf_b": 10.582
+      }
+    ],
+    "revenue_b_latest": 29.443,
+    "net_income_b_latest": 8.51,
+    "rd_b_latest": null,
+    "net_margin_latest": 28.9,
+    "rd_pct_latest": null,
+    "gross_margin_latest": null,
+    "fcf_b_latest": 10.582,
+    "cash_b_latest": null,
+    "debt_b_latest": 24.937
+  },
+  "BMY": {
+    "ticker": "BMY",
+    "name": "BRISTOL-MYERS SQUIBB COMPANY",
+    "cik": "0000014272",
+    "fetched": "2026-03-30",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "income_stmt": [
+      {
+        "year": "2022",
+        "revenue_b": 46.159,
+        "gross_profit_b": null,
+        "rd_expense_b": 9.509,
+        "sga_b": 7.814,
+        "operating_income_b": null,
+        "net_income_b": 6.327,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 13.7,
+        "rd_pct": 20.6
+      },
+      {
+        "year": "2023",
+        "revenue_b": 45.006,
+        "gross_profit_b": null,
+        "rd_expense_b": 9.299,
+        "sga_b": 7.772,
+        "operating_income_b": null,
+        "net_income_b": 8.025,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 17.8,
+        "rd_pct": 20.7
+      },
+      {
+        "year": "2024",
+        "revenue_b": 48.3,
+        "gross_profit_b": null,
+        "rd_expense_b": 11.159,
+        "sga_b": 8.414,
+        "operating_income_b": null,
+        "net_income_b": -8.948,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": -18.5,
+        "rd_pct": 23.1
+      },
+      {
+        "year": "2025",
+        "revenue_b": 48.194,
+        "gross_profit_b": null,
+        "rd_expense_b": 9.951,
+        "sga_b": 7.267,
+        "operating_income_b": null,
+        "net_income_b": 7.054,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 14.6,
+        "rd_pct": 20.6
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2022",
+        "cash_b": 9.123,
+        "total_assets_b": 96.82,
+        "total_liabilities_b": 65.702,
+        "stockholders_equity_b": 31.061,
+        "lt_debt_b": 38.953,
+        "retained_earnings_b": 25.503
+      },
+      {
+        "year": "2023",
+        "cash_b": 11.464,
+        "total_assets_b": 95.159,
+        "total_liabilities_b": 65.674,
+        "stockholders_equity_b": 29.43,
+        "lt_debt_b": 39.526,
+        "retained_earnings_b": 28.766
+      },
+      {
+        "year": "2024",
+        "cash_b": 10.346,
+        "total_assets_b": 92.603,
+        "total_liabilities_b": 76.215,
+        "stockholders_equity_b": 16.335,
+        "lt_debt_b": 49.431,
+        "retained_earnings_b": 14.912
+      },
+      {
+        "year": "2025",
+        "cash_b": 10.209,
+        "total_assets_b": 90.038,
+        "total_liabilities_b": 71.533,
+        "stockholders_equity_b": 18.473,
+        "lt_debt_b": 44.827,
+        "retained_earnings_b": 16.896
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2022",
+        "operating_cf_b": 13.066,
+        "investing_cf_b": -1.062,
+        "financing_cf_b": -16.962,
+        "capex_b": 1.118,
+        "fcf_b": 14.184
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": 13.86,
+        "investing_cf_b": -2.295,
+        "financing_cf_b": -9.416,
+        "capex_b": 1.209,
+        "fcf_b": 15.069
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": 15.19,
+        "investing_cf_b": -21.352,
+        "financing_cf_b": 5.127,
+        "capex_b": 1.248,
+        "fcf_b": 16.438
+      },
+      {
+        "year": "2025",
+        "operating_cf_b": 14.156,
+        "investing_cf_b": -4.132,
+        "financing_cf_b": -10.348,
+        "capex_b": 1.311,
+        "fcf_b": 15.467
+      }
+    ],
+    "revenue_b_latest": 48.194,
+    "net_income_b_latest": 7.054,
+    "rd_b_latest": 9.951,
+    "net_margin_latest": 14.6,
+    "rd_pct_latest": 20.6,
+    "gross_margin_latest": null,
+    "fcf_b_latest": 15.467,
+    "cash_b_latest": 10.209,
+    "debt_b_latest": 44.827
+  },
+  "MRNA": {
+    "ticker": "MRNA",
+    "name": "MODERNA, INC.",
+    "cik": "0001682852",
+    "fetched": "2026-03-30",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "income_stmt": [
+      {
+        "year": "2022",
+        "revenue_b": 19.263,
+        "gross_profit_b": null,
+        "rd_expense_b": 3.295,
+        "sga_b": null,
+        "operating_income_b": 9.42,
+        "net_income_b": 8.362,
+        "gross_margin": null,
+        "operating_margin": 48.9,
+        "net_margin": 43.4,
+        "rd_pct": 17.1
+      },
+      {
+        "year": "2023",
+        "revenue_b": 6.848,
+        "gross_profit_b": null,
+        "rd_expense_b": 4.845,
+        "sga_b": null,
+        "operating_income_b": -4.239,
+        "net_income_b": -4.714,
+        "gross_margin": null,
+        "operating_margin": -61.9,
+        "net_margin": -68.8,
+        "rd_pct": 70.8
+      },
+      {
+        "year": "2024",
+        "revenue_b": 3.236,
+        "gross_profit_b": null,
+        "rd_expense_b": 4.543,
+        "sga_b": null,
+        "operating_income_b": -3.945,
+        "net_income_b": -3.561,
+        "gross_margin": null,
+        "operating_margin": -121.9,
+        "net_margin": -110.0,
+        "rd_pct": 140.4
+      },
+      {
+        "year": "2025",
+        "revenue_b": 1.944,
+        "gross_profit_b": null,
+        "rd_expense_b": 3.132,
+        "sga_b": null,
+        "operating_income_b": -3.074,
+        "net_income_b": -2.822,
+        "gross_margin": null,
+        "operating_margin": -158.1,
+        "net_margin": -145.2,
+        "rd_pct": 161.1
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2022",
+        "cash_b": 3.205,
+        "total_assets_b": 25.858,
+        "total_liabilities_b": 6.735,
+        "stockholders_equity_b": 19.123,
+        "lt_debt_b": null,
+        "retained_earnings_b": 18.32
+      },
+      {
+        "year": "2023",
+        "cash_b": 2.907,
+        "total_assets_b": 18.426,
+        "total_liabilities_b": 4.572,
+        "stockholders_equity_b": 13.854,
+        "lt_debt_b": null,
+        "retained_earnings_b": 13.606
+      },
+      {
+        "year": "2024",
+        "cash_b": 1.927,
+        "total_assets_b": 14.142,
+        "total_liabilities_b": 3.241,
+        "stockholders_equity_b": 10.901,
+        "lt_debt_b": null,
+        "retained_earnings_b": 10.045
+      },
+      {
+        "year": "2025",
+        "cash_b": 2.595,
+        "total_assets_b": 12.338,
+        "total_liabilities_b": 3.688,
+        "stockholders_equity_b": 8.65,
+        "lt_debt_b": null,
+        "retained_earnings_b": 7.223
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2022",
+        "operating_cf_b": 4.981,
+        "investing_cf_b": -5.176,
+        "financing_cf_b": -3.448,
+        "capex_b": 0.4,
+        "fcf_b": 5.381
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": -3.118,
+        "investing_cf_b": 4.206,
+        "financing_cf_b": -1.377,
+        "capex_b": 0.707,
+        "fcf_b": -2.411
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": -3.004,
+        "investing_cf_b": 1.949,
+        "financing_cf_b": 0.056,
+        "capex_b": 1.051,
+        "fcf_b": -1.953
+      },
+      {
+        "year": "2025",
+        "operating_cf_b": -1.873,
+        "investing_cf_b": 1.946,
+        "financing_cf_b": 0.593,
+        "capex_b": 0.192,
+        "fcf_b": -1.681
+      }
+    ],
+    "revenue_b_latest": 1.944,
+    "net_income_b_latest": -2.822,
+    "rd_b_latest": 3.132,
+    "net_margin_latest": -145.2,
+    "rd_pct_latest": 161.1,
+    "gross_margin_latest": null,
+    "fcf_b_latest": -1.681,
+    "cash_b_latest": 2.595,
+    "debt_b_latest": null
+  },
+  "BIIB": {
+    "ticker": "BIIB",
+    "name": "BIOGEN INC.",
+    "cik": "0000875045",
+    "fetched": "2026-03-30",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "income_stmt": [
+      {
+        "year": "2022",
+        "revenue_b": 10.173,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 2.404,
+        "operating_income_b": null,
+        "net_income_b": 3.047,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 30.0,
+        "rd_pct": null
+      },
+      {
+        "year": "2023",
+        "revenue_b": 9.836,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 2.55,
+        "operating_income_b": null,
+        "net_income_b": 1.161,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 11.8,
+        "rd_pct": null
+      },
+      {
+        "year": "2024",
+        "revenue_b": 9.676,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 2.404,
+        "operating_income_b": null,
+        "net_income_b": 1.632,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 16.9,
+        "rd_pct": null
+      },
+      {
+        "year": "2025",
+        "revenue_b": 9.891,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 2.434,
+        "operating_income_b": null,
+        "net_income_b": 1.293,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 13.1,
+        "rd_pct": null
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2022",
+        "cash_b": null,
+        "total_assets_b": 24.554,
+        "total_liabilities_b": 11.166,
+        "stockholders_equity_b": 13.398,
+        "lt_debt_b": 6.281,
+        "retained_earnings_b": 16.466
+      },
+      {
+        "year": "2023",
+        "cash_b": null,
+        "total_assets_b": 26.845,
+        "total_liabilities_b": 12.045,
+        "stockholders_equity_b": 14.799,
+        "lt_debt_b": 6.938,
+        "retained_earnings_b": 17.628
+      },
+      {
+        "year": "2024",
+        "cash_b": null,
+        "total_assets_b": 28.049,
+        "total_liabilities_b": 11.333,
+        "stockholders_equity_b": null,
+        "lt_debt_b": 6.296,
+        "retained_earnings_b": 19.26
+      },
+      {
+        "year": "2025",
+        "cash_b": null,
+        "total_assets_b": 29.439,
+        "total_liabilities_b": 11.183,
+        "stockholders_equity_b": null,
+        "lt_debt_b": 6.287,
+        "retained_earnings_b": 20.553
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2022",
+        "operating_cf_b": 1.384,
+        "investing_cf_b": 1.577,
+        "financing_cf_b": -1.747,
+        "capex_b": 0.24,
+        "fcf_b": 1.624
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": 1.547,
+        "investing_cf_b": -4.101,
+        "financing_cf_b": 0.149,
+        "capex_b": 0.277,
+        "fcf_b": 1.824
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": 2.876,
+        "investing_cf_b": -0.799,
+        "financing_cf_b": -0.683,
+        "capex_b": 0.154,
+        "fcf_b": 3.03
+      },
+      {
+        "year": "2025",
+        "operating_cf_b": 2.205,
+        "investing_cf_b": -1.371,
+        "financing_cf_b": -0.302,
+        "capex_b": 0.154,
+        "fcf_b": 2.359
+      }
+    ],
+    "revenue_b_latest": 9.891,
+    "net_income_b_latest": 1.293,
+    "rd_b_latest": null,
+    "net_margin_latest": 13.1,
+    "rd_pct_latest": null,
+    "gross_margin_latest": null,
+    "fcf_b_latest": 2.359,
+    "cash_b_latest": null,
+    "debt_b_latest": 6.287
+  },
+  "PFE": {
+    "ticker": "PFE",
+    "name": "PFIZER INC",
+    "cik": "0000078003",
+    "fetched": "2026-03-30",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "income_stmt": [
+      {
+        "year": "2022",
+        "revenue_b": 101.175,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 13.677,
+        "operating_income_b": null,
+        "net_income_b": 31.372,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 31.0,
+        "rd_pct": null
+      },
+      {
+        "year": "2023",
+        "revenue_b": 59.553,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 14.771,
+        "operating_income_b": null,
+        "net_income_b": 2.119,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 3.6,
+        "rd_pct": null
+      },
+      {
+        "year": "2024",
+        "revenue_b": 63.627,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 14.73,
+        "operating_income_b": null,
+        "net_income_b": 8.031,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 12.6,
+        "rd_pct": null
+      },
+      {
+        "year": "2025",
+        "revenue_b": 62.579,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": 13.794,
+        "operating_income_b": null,
+        "net_income_b": 7.771,
+        "gross_margin": null,
+        "operating_margin": null,
+        "net_margin": 12.4,
+        "rd_pct": null
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2022",
+        "cash_b": 0.416,
+        "total_assets_b": 197.205,
+        "total_liabilities_b": 101.288,
+        "stockholders_equity_b": 95.661,
+        "lt_debt_b": null,
+        "retained_earnings_b": 125.656
+      },
+      {
+        "year": "2023",
+        "cash_b": 2.853,
+        "total_assets_b": 226.501,
+        "total_liabilities_b": 137.213,
+        "stockholders_equity_b": 89.014,
+        "lt_debt_b": null,
+        "retained_earnings_b": 118.353
+      },
+      {
+        "year": "2024",
+        "cash_b": 1.043,
+        "total_assets_b": 213.396,
+        "total_liabilities_b": 124.899,
+        "stockholders_equity_b": 88.203,
+        "lt_debt_b": null,
+        "retained_earnings_b": 116.725
+      },
+      {
+        "year": "2025",
+        "cash_b": 1.142,
+        "total_assets_b": 208.16,
+        "total_liabilities_b": 121.385,
+        "stockholders_equity_b": 86.476,
+        "lt_debt_b": null,
+        "retained_earnings_b": 114.61
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2022",
+        "operating_cf_b": 29.267,
+        "investing_cf_b": -15.783,
+        "financing_cf_b": -14.834,
+        "capex_b": 3.236,
+        "fcf_b": 32.503
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": 8.7,
+        "investing_cf_b": -32.278,
+        "financing_cf_b": 26.066,
+        "capex_b": 3.907,
+        "fcf_b": 12.607
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": 12.744,
+        "investing_cf_b": 2.652,
+        "financing_cf_b": -17.14,
+        "capex_b": 2.909,
+        "fcf_b": 15.653
+      },
+      {
+        "year": "2025",
+        "operating_cf_b": 11.704,
+        "investing_cf_b": -1.351,
+        "financing_cf_b": -10.304,
+        "capex_b": 2.629,
+        "fcf_b": 14.333
+      }
+    ],
+    "revenue_b_latest": 62.579,
+    "net_income_b_latest": 7.771,
+    "rd_b_latest": null,
+    "net_margin_latest": 12.4,
+    "rd_pct_latest": null,
+    "gross_margin_latest": null,
+    "fcf_b_latest": 14.333,
+    "cash_b_latest": 1.142,
+    "debt_b_latest": null
+  },
+  "ALNY": {
+    "ticker": "ALNY",
+    "name": "Alnylam Pharmaceuticals, Inc.",
+    "cik": "0001178670",
+    "fetched": "2026-03-30",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "income_stmt": [
+      {
+        "year": "2022",
+        "revenue_b": 1.037,
+        "gross_profit_b": null,
+        "rd_expense_b": 0.883,
+        "sga_b": 0.771,
+        "operating_income_b": -0.785,
+        "net_income_b": -1.131,
+        "gross_margin": null,
+        "operating_margin": -75.7,
+        "net_margin": -109.1,
+        "rd_pct": 85.1
+      },
+      {
+        "year": "2023",
+        "revenue_b": 1.828,
+        "gross_profit_b": null,
+        "rd_expense_b": 1.004,
+        "sga_b": 0.796,
+        "operating_income_b": -0.282,
+        "net_income_b": -0.44,
+        "gross_margin": null,
+        "operating_margin": -15.4,
+        "net_margin": -24.1,
+        "rd_pct": 54.9
+      },
+      {
+        "year": "2024",
+        "revenue_b": 2.248,
+        "gross_profit_b": null,
+        "rd_expense_b": 1.126,
+        "sga_b": 0.976,
+        "operating_income_b": -0.177,
+        "net_income_b": -0.278,
+        "gross_margin": null,
+        "operating_margin": -7.9,
+        "net_margin": -12.4,
+        "rd_pct": 50.1
+      },
+      {
+        "year": "2025",
+        "revenue_b": 3.714,
+        "gross_profit_b": null,
+        "rd_expense_b": 1.32,
+        "sga_b": 1.211,
+        "operating_income_b": 0.502,
+        "net_income_b": -0.018,
+        "gross_margin": null,
+        "operating_margin": 13.5,
+        "net_margin": -0.5,
+        "rd_pct": 35.5
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2022",
+        "cash_b": 0.866,
+        "total_assets_b": 3.546,
+        "total_liabilities_b": 3.705,
+        "stockholders_equity_b": -0.158,
+        "lt_debt_b": null,
+        "retained_earnings_b": -6.569
+      },
+      {
+        "year": "2023",
+        "cash_b": 0.813,
+        "total_assets_b": 3.83,
+        "total_liabilities_b": 4.051,
+        "stockholders_equity_b": -0.221,
+        "lt_debt_b": null,
+        "retained_earnings_b": -7.01
+      },
+      {
+        "year": "2024",
+        "cash_b": 0.966,
+        "total_assets_b": 4.24,
+        "total_liabilities_b": 4.173,
+        "stockholders_equity_b": 0.067,
+        "lt_debt_b": null,
+        "retained_earnings_b": -7.288
+      },
+      {
+        "year": "2025",
+        "cash_b": 1.657,
+        "total_assets_b": 4.966,
+        "total_liabilities_b": 4.177,
+        "stockholders_equity_b": 0.789,
+        "lt_debt_b": null,
+        "retained_earnings_b": -6.703
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2022",
+        "operating_cf_b": -0.541,
+        "investing_cf_b": 0.169,
+        "financing_cf_b": 0.426,
+        "capex_b": 0.072,
+        "fcf_b": -0.469
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": 0.104,
+        "investing_cf_b": -0.336,
+        "financing_cf_b": 0.172,
+        "capex_b": 0.062,
+        "fcf_b": 0.166
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": -0.008,
+        "investing_cf_b": -0.117,
+        "financing_cf_b": 0.294,
+        "capex_b": 0.034,
+        "fcf_b": 0.026
+      },
+      {
+        "year": "2025",
+        "operating_cf_b": 0.524,
+        "investing_cf_b": 0.436,
+        "financing_cf_b": -0.305,
+        "capex_b": 0.059,
+        "fcf_b": 0.583
+      }
+    ],
+    "revenue_b_latest": 3.714,
+    "net_income_b_latest": -0.018,
+    "rd_b_latest": 1.32,
+    "net_margin_latest": -0.5,
+    "rd_pct_latest": 35.5,
+    "gross_margin_latest": null,
+    "fcf_b_latest": 0.583,
+    "cash_b_latest": 1.657,
+    "debt_b_latest": null
+  },
+  "INCY": {
+    "ticker": "INCY",
+    "name": "INCYTE CORPORATION",
+    "cik": "0000879169",
+    "fetched": "2026-03-30",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "income_stmt": [
+      {
+        "year": "2022",
+        "revenue_b": 3.395,
+        "gross_profit_b": null,
+        "rd_expense_b": 1.586,
+        "sga_b": 1.002,
+        "operating_income_b": 0.579,
+        "net_income_b": 0.341,
+        "gross_margin": null,
+        "operating_margin": 17.1,
+        "net_margin": 10.0,
+        "rd_pct": 46.7
+      },
+      {
+        "year": "2023",
+        "revenue_b": 3.696,
+        "gross_profit_b": null,
+        "rd_expense_b": 1.628,
+        "sga_b": 1.156,
+        "operating_income_b": 0.621,
+        "net_income_b": 0.598,
+        "gross_margin": null,
+        "operating_margin": 16.8,
+        "net_margin": 16.2,
+        "rd_pct": 44.0
+      },
+      {
+        "year": "2024",
+        "revenue_b": 4.241,
+        "gross_profit_b": null,
+        "rd_expense_b": 2.607,
+        "sga_b": 1.242,
+        "operating_income_b": 0.061,
+        "net_income_b": 0.033,
+        "gross_margin": null,
+        "operating_margin": 1.4,
+        "net_margin": 0.8,
+        "rd_pct": 61.5
+      },
+      {
+        "year": "2025",
+        "revenue_b": 5.141,
+        "gross_profit_b": null,
+        "rd_expense_b": 2.05,
+        "sga_b": 1.376,
+        "operating_income_b": 1.515,
+        "net_income_b": 1.287,
+        "gross_margin": null,
+        "operating_margin": 29.5,
+        "net_margin": 25.0,
+        "rd_pct": 39.9
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2022",
+        "cash_b": 2.951,
+        "total_assets_b": 5.841,
+        "total_liabilities_b": 1.471,
+        "stockholders_equity_b": 4.37,
+        "lt_debt_b": null,
+        "retained_earnings_b": -0.437
+      },
+      {
+        "year": "2023",
+        "cash_b": 3.213,
+        "total_assets_b": 6.782,
+        "total_liabilities_b": 1.592,
+        "stockholders_equity_b": 5.19,
+        "lt_debt_b": null,
+        "retained_earnings_b": 0.16
+      },
+      {
+        "year": "2024",
+        "cash_b": 1.688,
+        "total_assets_b": 5.444,
+        "total_liabilities_b": 1.997,
+        "stockholders_equity_b": 3.448,
+        "lt_debt_b": null,
+        "retained_earnings_b": -1.073
+      },
+      {
+        "year": "2025",
+        "cash_b": 3.098,
+        "total_assets_b": 6.958,
+        "total_liabilities_b": 1.79,
+        "stockholders_equity_b": 5.167,
+        "lt_debt_b": null,
+        "retained_earnings_b": 0.214
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2022",
+        "operating_cf_b": 0.97,
+        "investing_cf_b": -0.079,
+        "financing_cf_b": -0.001,
+        "capex_b": null,
+        "fcf_b": null
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": 0.496,
+        "investing_cf_b": -0.208,
+        "financing_cf_b": -0.02,
+        "capex_b": null,
+        "fcf_b": null
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": 0.335,
+        "investing_cf_b": 0.158,
+        "financing_cf_b": -2.022,
+        "capex_b": 0.049,
+        "fcf_b": 0.384
+      },
+      {
+        "year": "2025",
+        "operating_cf_b": 1.413,
+        "investing_cf_b": -0.103,
+        "financing_cf_b": 0.101,
+        "capex_b": null,
+        "fcf_b": null
+      }
+    ],
+    "revenue_b_latest": 5.141,
+    "net_income_b_latest": 1.287,
+    "rd_b_latest": 2.05,
+    "net_margin_latest": 25.0,
+    "rd_pct_latest": 39.9,
+    "gross_margin_latest": null,
+    "fcf_b_latest": null,
+    "cash_b_latest": 3.098,
+    "debt_b_latest": null
+  },
+  "SRPT": {
+    "ticker": "SRPT",
+    "name": "Gulf Resources, Inc.",
+    "cik": "0000885462",
+    "fetched": "2026-03-30",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    "income_stmt": [
+      {
+        "year": "2021",
+        "revenue_b": 0.055,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": null,
+        "operating_income_b": 0.005,
+        "net_income_b": -0.001,
+        "gross_margin": null,
+        "operating_margin": 9.1,
+        "net_margin": -1.8,
+        "rd_pct": null
+      },
+      {
+        "year": "2022",
+        "revenue_b": 0.066,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": null,
+        "operating_income_b": 0.016,
+        "net_income_b": 0.01,
+        "gross_margin": null,
+        "operating_margin": 24.2,
+        "net_margin": 15.2,
+        "rd_pct": null
+      },
+      {
+        "year": "2023",
+        "revenue_b": 0.03,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": null,
+        "operating_income_b": -0.012,
+        "net_income_b": -0.062,
+        "gross_margin": null,
+        "operating_margin": -40.0,
+        "net_margin": -206.7,
+        "rd_pct": null
+      },
+      {
+        "year": "2024",
+        "revenue_b": 0.008,
+        "gross_profit_b": null,
+        "rd_expense_b": null,
+        "sga_b": null,
+        "operating_income_b": -0.021,
+        "net_income_b": -0.059,
+        "gross_margin": null,
+        "operating_margin": -262.5,
+        "net_margin": -737.5,
+        "rd_pct": null
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2021",
+        "cash_b": null,
+        "total_assets_b": 0.31,
+        "total_liabilities_b": 0.023,
+        "stockholders_equity_b": 0.287,
+        "lt_debt_b": null,
+        "retained_earnings_b": null
+      },
+      {
+        "year": "2022",
+        "cash_b": null,
+        "total_assets_b": 0.292,
+        "total_liabilities_b": 0.021,
+        "stockholders_equity_b": 0.272,
+        "lt_debt_b": null,
+        "retained_earnings_b": null
+      },
+      {
+        "year": "2023",
+        "cash_b": null,
+        "total_assets_b": 0.227,
+        "total_liabilities_b": 0.021,
+        "stockholders_equity_b": 0.205,
+        "lt_debt_b": null,
+        "retained_earnings_b": null
+      },
+      {
+        "year": "2024",
+        "cash_b": null,
+        "total_assets_b": 0.169,
+        "total_liabilities_b": 0.026,
+        "stockholders_equity_b": 0.144,
+        "lt_debt_b": null,
+        "retained_earnings_b": null
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2021",
+        "operating_cf_b": 0.023,
+        "investing_cf_b": -0.03,
+        "financing_cf_b": -0.0,
+        "capex_b": 0.03,
+        "fcf_b": 0.053
+      },
+      {
+        "year": "2022",
+        "operating_cf_b": 0.051,
+        "investing_cf_b": -0.038,
+        "financing_cf_b": -0.0,
+        "capex_b": 0.038,
+        "fcf_b": 0.089
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": -0.033,
+        "investing_cf_b": null,
+        "financing_cf_b": -0.0,
+        "capex_b": null,
+        "fcf_b": null
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": 0.001,
+        "investing_cf_b": -0.061,
+        "financing_cf_b": -0.0,
+        "capex_b": 0.061,
+        "fcf_b": 0.062
+      }
+    ],
+    "revenue_b_latest": 0.008,
+    "net_income_b_latest": -0.059,
+    "rd_b_latest": null,
+    "net_margin_latest": -737.5,
+    "rd_pct_latest": null,
+    "gross_margin_latest": null,
+    "fcf_b_latest": 0.062,
+    "cash_b_latest": null,
+    "debt_b_latest": null
+  },
+  "BPMC": {
+    "ticker": "BPMC",
+    "name": "Blueprint Medicines",
+    "error": true
+  },
+  "ARVN": {
+    "ticker": "ARVN",
+    "name": "FULGENT GENETICS, INC.",
+    "cik": "0001674930",
+    "fetched": "2026-03-30",
+    "years": [
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "income_stmt": [
+      {
+        "year": "2022",
+        "revenue_b": 0.619,
+        "gross_profit_b": 0.367,
+        "rd_expense_b": 0.029,
+        "sga_b": null,
+        "operating_income_b": 0.179,
+        "net_income_b": 0.143,
+        "gross_margin": 59.3,
+        "operating_margin": 28.9,
+        "net_margin": 23.1,
+        "rd_pct": 4.7
+      },
+      {
+        "year": "2023",
+        "revenue_b": 0.289,
+        "gross_profit_b": 0.104,
+        "rd_expense_b": 0.041,
+        "sga_b": null,
+        "operating_income_b": -0.196,
+        "net_income_b": -0.168,
+        "gross_margin": 36.0,
+        "operating_margin": -67.8,
+        "net_margin": -58.1,
+        "rd_pct": 14.2
+      },
+      {
+        "year": "2024",
+        "revenue_b": 0.283,
+        "gross_profit_b": 0.107,
+        "rd_expense_b": 0.049,
+        "sga_b": null,
+        "operating_income_b": -0.074,
+        "net_income_b": -0.043,
+        "gross_margin": 37.8,
+        "operating_margin": -26.1,
+        "net_margin": -15.2,
+        "rd_pct": 17.3
+      },
+      {
+        "year": "2025",
+        "revenue_b": 0.323,
+        "gross_profit_b": 0.131,
+        "rd_expense_b": 0.054,
+        "sga_b": null,
+        "operating_income_b": -0.091,
+        "net_income_b": -0.061,
+        "gross_margin": 40.6,
+        "operating_margin": -28.2,
+        "net_margin": -18.9,
+        "rd_pct": 16.7
+      }
+    ],
+    "balance_sheet": [
+      {
+        "year": "2022",
+        "cash_b": 0.08,
+        "total_assets_b": 1.386,
+        "total_liabilities_b": 0.116,
+        "stockholders_equity_b": 1.267,
+        "lt_debt_b": null,
+        "retained_earnings_b": 0.801
+      },
+      {
+        "year": "2023",
+        "cash_b": 0.097,
+        "total_assets_b": 1.235,
+        "total_liabilities_b": 0.102,
+        "stockholders_equity_b": 1.136,
+        "lt_debt_b": null,
+        "retained_earnings_b": 0.633
+      },
+      {
+        "year": "2024",
+        "cash_b": 0.055,
+        "total_assets_b": 1.22,
+        "total_liabilities_b": 0.091,
+        "stockholders_equity_b": 1.133,
+        "lt_debt_b": null,
+        "retained_earnings_b": 0.59
+      },
+      {
+        "year": "2025",
+        "cash_b": 0.05,
+        "total_assets_b": 1.214,
+        "total_liabilities_b": 0.107,
+        "stockholders_equity_b": 1.112,
+        "lt_debt_b": null,
+        "retained_earnings_b": 0.53
+      }
+    ],
+    "cash_flow": [
+      {
+        "year": "2022",
+        "operating_cf_b": 0.254,
+        "investing_cf_b": -0.261,
+        "financing_cf_b": -0.077,
+        "capex_b": 0.019,
+        "fcf_b": 0.273
+      },
+      {
+        "year": "2023",
+        "operating_cf_b": 0.027,
+        "investing_cf_b": 0.039,
+        "financing_cf_b": -0.048,
+        "capex_b": 0.022,
+        "fcf_b": 0.049
+      },
+      {
+        "year": "2024",
+        "operating_cf_b": 0.021,
+        "investing_cf_b": -0.058,
+        "financing_cf_b": -0.005,
+        "capex_b": 0.04,
+        "fcf_b": 0.061
+      },
+      {
+        "year": "2025",
+        "operating_cf_b": -0.102,
+        "investing_cf_b": 0.111,
+        "financing_cf_b": -0.015,
+        "capex_b": 0.023,
+        "fcf_b": -0.079
+      }
+    ],
+    "revenue_b_latest": 0.323,
+    "net_income_b_latest": -0.061,
+    "rd_b_latest": 0.054,
+    "net_margin_latest": -18.9,
+    "rd_pct_latest": 16.7,
+    "gross_margin_latest": 40.6,
+    "fcf_b_latest": -0.079,
+    "cash_b_latest": 0.05,
+    "debt_b_latest": null
+  }
+}
